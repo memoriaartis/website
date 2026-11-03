@@ -1,1 +1,36 @@
-<html><body><p>Hello Sebastien !</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="A new beginning for Memoria Artis.">
+  <title>Hello World! — Memoria Artis</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #252b25; background: #f3f0e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; display: flex; flex-direction: column; }
+    header, footer { padding: 28px clamp(24px, 6vw, 96px); }
+    header { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    main { flex: 1; display: grid; align-content: center; position: relative; isolation: isolate; overflow: hidden; padding: 100px clamp(24px, 10vw, 160px); }
+    .art { position: absolute; z-index: -1; width: clamp(260px, 45vw, 650px); aspect-ratio: 1; right: -8%; top: 50%; transform: translateY(-50%) rotate(-18deg); border: 1px solid #bec2af; border-radius: 50%; background: repeating-radial-gradient(ellipse at center, transparent 0 24px, #bec2af 25px 26px, transparent 27px 48px); opacity: .5; }
+    .eyebrow { margin: 0 0 28px; display: flex; align-items: center; gap: 12px; font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+    .eyebrow::before { content: ''; width: 28px; height: 2px; background: #a44730; }
+    h1 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(76px, 13vw, 190px); font-weight: 400; letter-spacing: -.065em; line-height: .95; }
+    h1 span { display: block; color: #a44730; font-style: italic; }
+    .intro { max-width: 300px; margin: 36px 0 0; color: #60665c; font-size: 16px; line-height: 1.7; }
+    footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid #d8d8cc; color: #60665c; font-size: 11px; letter-spacing: .05em; }
+    @media (max-width: 600px) { main { padding-top: 72px; padding-bottom: 72px; } .art { right: -45%; opacity: .3; } footer { flex-wrap: wrap; } }
+  </style>
+</head>
+<body>
+  <header>Memoria Artis</header>
+  <main>
+    <div class="art" aria-hidden="true"></div>
+    <p class="eyebrow">A new beginning</p>
+    <h1>Hello <span>World!</span></h1>
+    <p class="intro">Every story starts somewhere.<br>Ours begins here.</p>
+  </main>
+  <footer><span>Memoria Artis</span><span>A space for what's next.</span></footer>
+</body>
+</html>
