@@ -1,54 +1,73 @@
-### Introduction
+### Ouverture
 
-**Eyebrow:** Le projet
+**Eyebrow:** L’association
 
-**H1:** Préserver ce qui permet de faire
+**H1:** Donner un avenir aux savoir-faire artisanaux
 
-Un objet porte la trace d’un savoir-faire. Comprendre comment il a été réalisé demande aussi de connaître les gestes, les choix et l’expérience de la personne qui l’a façonné.
+Memoria Artis est une association suisse consacrée à la préservation et à la transmission des savoir-faire artisanaux. Nous allons à la rencontre des personnes qui les pratiquent pour documenter leur expérience et construire une base de connaissances qui pourra servir aux générations suivantes.
 
-Memoria Artis est une initiative suisse consacrée à cette mémoire du travail artisanal.
+### Bloc 1 Notre raison d’être
 
-### Section 1 Mission
+**H2:** Une mémoire qui puisse encore servir
 
-**H2:** Une mémoire des pratiques
+Les savoir-faire vivent dans les personnes qui les exercent. Ils évoluent dans les ateliers, se transmettent par la pratique et s’enrichissent de l’expérience de chacun.
 
-Notre ambition est de documenter, structurer et conserver les savoir-faire artisanaux pour les rendre transmissibles.
+Leur préservation demande de recueillir ce que les artisans savent montrer et expliquer : une technique, un enchaînement, un choix, une façon de lire la matière ou de corriger une erreur. Elle demande aussi de conserver l’histoire et le contexte qui donnent leur sens à ces connaissances.
 
-Nous nous intéressons aux façons de faire, mais aussi aux repères qui les accompagnent : comprendre une matière, reconnaître un résultat satisfaisant, adapter un geste ou expliquer pourquoi une étape compte.
+Notre but est de rendre cette mémoire utilisable. Nous voulons que les personnes qui viennent après puissent y retrouver des repères pour comprendre une pratique, nourrir leur apprentissage et poursuivre une transmission.
 
-Ces connaissances prennent sens dans un atelier, une histoire et une pratique. Les conserver demande de garder ces liens.
+### Bloc 2 Notre action
 
-### Section 2 What preservation includes
+**H2:** Rencontrer, documenter, faire connaître
 
-**H2:** Garder le geste et son contexte
+Les rencontres et les visites d’ateliers sont le point de départ de notre travail. Elles permettent de découvrir une personne, son métier, son lieu de travail et les connaissances qu’elle souhaite partager.
 
-La documentation peut réunir des images, des paroles, des photographies et des documents de travail. Leur intérêt repose autant sur ce qu’ils montrent que sur la manière dont ils sont décrits et reliés entre eux.
+Les visites filmées ouvrent une porte sur ces univers. Elles font découvrir le travail des artisans et donnent envie de s’y intéresser.
 
-L’objectif est de constituer des ensembles que l’on puisse consulter et comprendre dans le temps, et à partir desquels préparer des ressources de transmission.
+La documentation approfondie poursuit un autre objectif : recueillir les éléments nécessaires pour comprendre une pratique dans le détail. Elle demande du temps, des explications et un travail de structuration avec l’artisan. Selon les projets, une même rencontre peut nourrir ces deux dimensions.
 
-Une archive ne remplace ni la pratique ni la relation d’apprentissage. Elle peut en conserver des repères et aider à renouer le fil.
+### Bloc 3 Ce que nous construisons
 
-### Section 3 People and purpose
+**H2:** Une base de connaissances des savoir-faire artisanaux
 
-**H2:** Avec les personnes qui savent faire
+Nous souhaitons constituer une base qui rassemble des documents et les connaissances qu’ils permettent de transmettre. Les vidéos, les entretiens, les photographies et les descriptions y sont reliés aux pratiques documentées.
 
-Les artisans et les ateliers sont au cœur de la démarche. Ils apportent leur expérience, expliquent leurs choix et aident à vérifier que leur pratique est représentée avec justesse.
+Pour un savoir-faire donné, cette organisation doit permettre de retrouver les étapes, les outils et les matières, mais aussi les prérequis, les points de vigilance et les explications de la personne qui le maîtrise.
 
-Les écoles, les institutions culturelles et les partenaires qui s’intéressent à la transmission peuvent contribuer à donner un avenir à cette documentation.
+La base est pensée pour accueillir progressivement des pratiques différentes, tout en conservant la provenance des informations et les particularités de chaque atelier.
 
-### Section 4 Project origin
+### Bloc 4 La finalité
+
+**H2:** De la préservation à la transmission
+
+Nous commençons par constituer cette base et par développer la méthode qui permet de l’alimenter avec rigueur.
+
+Dans un second temps, une plateforme devra rendre ces connaissances plus faciles à explorer et à utiliser. L’ambition est de proposer des accès par savoir-faire, des explications liées aux différentes étapes et des parcours qui rendent visibles les connaissances à acquérir.
+
+Cette ressource pourra accompagner la découverte et l’apprentissage. La pratique et la relation avec les personnes de métier garderont toute leur place.
+
+### Bloc 5 Avec qui
+
+**H2:** Une mission à porter ensemble
+
+Les artisans sont les premiers partenaires de cette démarche. Leur participation permet de préciser ce qui doit être documenté et de vérifier la justesse des explications recueillies.
+
+Les écoles, les institutions culturelles, les associations professionnelles et les personnes qui souhaitent soutenir la transmission peuvent contribuer au développement des premiers projets.
+
+Les conditions de participation et de diffusion sont définies avec chaque atelier. Préserver une connaissance demande aussi de respecter les personnes qui l’ont construite.
+
+### Bloc 6 Origine
 
 **H2:** À l’origine de Memoria Artis
 
-Le projet est initié en Suisse par Grégoire Mével. Il part d’une conviction : la mémoire d’un métier se construit aussi en documentant le travail d’aujourd’hui.
+Memoria Artis est portée par Grégoire Mével, en Suisse. L’association naît d’une volonté : aller recueillir les savoir-faire auprès de celles et ceux qui les pratiquent, puis organiser cette mémoire pour qu’elle puisse être transmise.
 
-Memoria Artis se développe progressivement, à partir de premiers projets et de collaborations autour des savoir-faire artisanaux.
+Son développement commence dans les ateliers, avec les premières rencontres et la construction d’une méthode adaptée aux réalités du terrain.
 
+### Invitation finale
 
-### Closing invitation
+**H2:** Prendre part aux premiers projets
 
-**H2:** Un savoir-faire à documenter ?
+Un atelier à nous faire découvrir, un savoir-faire à documenter, une collaboration à imaginer ? Écrivons la suite ensemble.
 
-Vous connaissez une pratique, un atelier ou une histoire qui mérite d’être conservée ? Nous serions heureux d’en parler avec vous.
-
-**CTA:** Nous écrire → `/fr/contact/?sujet=savoir-faire`
+**CTA:** Contacter l’association → `/fr/contact/`

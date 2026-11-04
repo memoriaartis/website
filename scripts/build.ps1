@@ -74,6 +74,9 @@ function Render-Copy($text) {
         'Introduction' { $html.Add("<p class='intro'>$(Escape $value)</p>") }
         default { $html.Add((Render-Link $value $kind)) }
       }
+    } elseif ($block -match '(?m)^- ') {
+      $items = @($block -split '\r?\n' | Where-Object { $_.StartsWith('- ') } | ForEach-Object { "<li>$(Escape $_.Substring(2))</li>" })
+      $html.Add('<ul class="knowledge-list">' + ($items -join '') + '</ul>')
     } elseif ($block -match '^\*\*(.+?)\*\*$') { $html.Add("<h3>$(Escape $Matches[1])</h3>") }
     elseif ($block -match '^## (.+)$') { $html.Add("<h2>$(Escape $Matches[1])</h2>") }
     else { $html.Add("<p>$(Escape ($block -replace '\r?\n', ' '))</p>") }
@@ -84,13 +87,25 @@ function Page-Sections($id) {
   $source = Get-Content -LiteralPath (Join-Path $root "content/$id.$Locale.md") -Raw -Encoding UTF8
   return @([regex]::Split($source, '(?m)^### .+\r?\n') | Where-Object { $_.Trim() })
 }
-function Split-Section($body, $number = '') {
+function Split-Section($body, $number = '', $class = '') {
   $match = [regex]::Match($body, '(?m)^\*\*H2:\*\* (.+)\r?\n')
   if (!$match.Success) { throw 'Section needs H2.' }
   $heading = Escape $match.Groups[1].Value
   $copy = Render-Copy $body.Substring($match.Index + $match.Length)
   $prefix = if ($number) { "<span class='section-number'>$number</span>" } else { '' }
-  return "<section class='section split'><h2>$prefix$heading</h2><div class='section-copy'>$copy</div></section>"
+  return "<section class='section split $class'><h2>$prefix$heading</h2><div class='section-copy'>$copy</div></section>"
+}
+function Column-Section($body, $class = '') {
+  $heading = [regex]::Match($body, '(?m)^\*\*H2:\*\* (.+)').Groups[1].Value.Trim()
+  $closingMatch = [regex]::Match($body, '(?m)^\*\*Closing:\*\* (.+)')
+  if ($closingMatch.Success) { $body = $body.Substring(0, $closingMatch.Index) }
+  $columns = ''
+  $items = [regex]::Matches($body, '(?ms)^\*\*([^*:]+)\*\*\s*\r?\n\s*(.+?)(?=\r?\n\s*\*\*|\z)')
+  foreach ($item in $items) { $columns += "<article><h3>$(Escape $item.Groups[1].Value)</h3>$(Render-Copy $item.Groups[2].Value)</article>" }
+  $link = [regex]::Match($body, '(?m)^\*\*Text link:\*\* (.+)').Groups[1].Value.Trim()
+  $after = if ($link) { Render-Link $link 'Text link' } else { '' }
+  if ($closingMatch.Success) { $after += "<p class='section-closing'>$(Escape $closingMatch.Groups[1].Value)</p>" }
+  return "<section class='section'><h2>$(Escape $heading)</h2><div class='columns $class'>$columns</div>$after</section>"
 }
 function Invitation($body) {
   $match = [regex]::Match($body, '(?m)^\*\*H2:\*\* (.+)\r?\n')
@@ -131,14 +146,7 @@ function Page-Body($id) {
     # Wrap the two hero links together without putting editorial text in templates.
     $hero = $hero -replace '(<a class=.button primary.)', '<div class="actions">$1'
     $hero += '</div>'
-    $approach = $sections[2]
-    $heading = [regex]::Match($approach, '(?m)^\*\*H2:\*\* (.+)').Groups[1].Value.Trim()
-    $columns = ''
-    $matches = [regex]::Matches($approach, '(?ms)^\*\*([^*:]+)\*\*\s*\r?\n\s*(.+?)(?=\r?\n\s*\*\*|\z)')
-    $i = 0
-    foreach ($item in $matches) { $i++; $columns += "<article><span class='section-number'>0$i</span><h3>$(Escape $item.Groups[1].Value)</h3>$(Render-Copy $item.Groups[2].Value)</article>" }
-    $link = [regex]::Match($approach, '(?m)^\*\*Text link:\*\* (.+)').Groups[1].Value.Trim()
-    return "<section class='hero'><div class='hero-copy'>$hero</div>$(Image-Area 'hero')</section>$(Split-Section $sections[1] '01')<section class='section'><h2>$(Escape $heading)</h2><div class='columns'>$columns</div>$(Render-Link $link 'Text link')</section>$(Split-Section $sections[3] '03')$(Invitation $sections[4])"
+    return "<section class='hero'><div class='hero-copy'>$hero</div>$(Image-Area 'hero')</section>$(Split-Section $sections[1])$(Column-Section $sections[2])$(Split-Section $sections[3])$(Column-Section $sections[4] 'two-columns')$(Invitation $sections[5])"
   }
   $intro = "<div class='page-intro'>$(Render-Copy $sections[0])</div>"
   if ($id -eq 'contact') {
@@ -150,17 +158,23 @@ function Page-Body($id) {
     return "$intro<div class='contact-layout'><div class='contact-entries'>$entries</div>$contact</div>"
   }
   $body = "$intro$(Image-Area $id 'wide-image')<div class='editorial'>"
-  for ($index = 1; $index -lt ($sections.Count - 1); $index++) {
-    if ($id -eq 'approach' -and $index -eq 1) {
+  $end = if ($id -eq 'approach') { $sections.Count } else { $sections.Count - 1 }
+  for ($index = 1; $index -lt $end; $index++) {
+    if ($id -eq 'approach' -and $sections[$index] -match '(?m)^\*\*1\. ') {
       $heading = [regex]::Match($sections[$index], '(?m)^\*\*H2:\*\* (.+)').Groups[1].Value.Trim()
       $steps = ''
       foreach ($step in [regex]::Matches($sections[$index], '(?ms)^\*\*\d\. (.+?)\*\*\s*\r?\n\s*(.+?)(?=\r?\n\s*\*\*|\z)')) {
         $steps += "<li><div><h3>$(Escape $step.Groups[1].Value)</h3>$(Render-Copy $step.Groups[2].Value)</div></li>"
       }
       $body += "<section class='section split'><h2>$(Escape $heading)</h2><ol class='steps'>$steps</ol></section>"
+    } elseif ($id -eq 'approach' -and $index -eq 3) {
+      $body += Split-Section $sections[$index] '' 'example'
+    } elseif ($id -eq 'approach' -and $index -eq 5) {
+      $body += Column-Section $sections[$index] 'two-columns'
     } else { $body += Split-Section $sections[$index] }
   }
-  return "$body</div>$(Invitation $sections[-1])"
+  $closing = if ($id -eq 'project') { Invitation $sections[-1] } else { '' }
+  return "$body</div>$closing"
 }
 foreach ($page in $routes.PSObject.Properties) {
   $id = $page.Name

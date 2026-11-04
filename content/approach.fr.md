@@ -1,60 +1,82 @@
-### Introduction
+### Ouverture
 
-**Eyebrow:** Notre démarche
+**Eyebrow:** La démarche
 
-**H1:** Comprendre, documenter, organiser
+**H1:** Une méthode de documentation pensée pour la transmission
 
-Pour transmettre un savoir-faire, il faut pouvoir retrouver les gestes, comprendre les choix et situer chaque information dans son contexte. Notre démarche relie la documentation du travail à l’organisation de sa mémoire.
+Comment recueillir un savoir-faire pour qu’une autre personne puisse ensuite le comprendre ? Cette question guide notre démarche, depuis la préparation d’une rencontre jusqu’à l’organisation et à la restitution des connaissances.
 
-### Section 1 Four stages
+### Bloc 1 Comprendre les liens
 
-**H2:** Une démarche construite avec chaque atelier
+**H2:** Un savoir-faire se comprend dans son ensemble
 
-**1. Définir ce qui compte**
+Un geste dépend de ce qui le précède, de l’état de la matière et du résultat recherché. Il peut aussi demander des connaissances que l’artisan utilise sans avoir besoin de les formuler à chaque fois.
 
-Nous commençons par un échange sur la pratique, son histoire et les connaissances à préserver. Ensemble, nous précisons le périmètre du projet et les conditions de participation.
+Notre travail consiste à faire apparaître ces liens : les étapes et leurs prérequis, les outils et leur usage, les signes à observer, les choix possibles et les corrections. Ils forment une structure qui aide à comprendre la pratique.
 
-**2. Documenter le travail**
+### Bloc 2 La méthode
 
-Les gestes sont recueillis avec les explications qui leur donnent sens. Selon le projet, la documentation associe images, entretiens, photographies et documents existants.
+**H2:** De la rencontre à une connaissance structurée
 
-**3. Organiser la mémoire**
+**1. Préparer avec l’artisan**
 
-Les éléments recueillis sont décrits et reliés aux étapes de la pratique. Le but est de pouvoir retrouver une information et comprendre sa place dans l’ensemble.
+Identifier la pratique à documenter, son contexte et les connaissances importantes. Définir le périmètre du travail, les autorisations et les conditions d’utilisation des documents.
 
-**4. Préparer la transmission**
+**2. Recueillir les gestes et les explications**
 
-La conservation et les usages sont pensés dès le départ. Selon les accords établis, la documentation pourra nourrir des films, des publications ou des ressources pédagogiques.
+Documenter le travail par l’image, la parole et la photographie. Demander à l’artisan d’expliquer ce qu’il fait, ce qu’il observe et les raisons de ses choix, en revenant si nécessaire sur certains moments.
 
+**3. Structurer et vérifier**
 
-### Section 2 Knowledge holder participation
+Décrire les étapes, relier les prérequis, les matières et les outils, puis associer chaque connaissance aux documents qui l’éclairent. Vérifier les explications avec l’artisan et conserver les variantes propres à sa pratique.
 
-**H2:** Une représentation fidèle de la pratique
+**4. Archiver avec le contexte et les sources**
 
-Un geste peut être difficile à interpréter sans l’explication de celui ou celle qui le maîtrise. Le dialogue avec les participants permet de préciser les termes, d’éclairer les choix et de vérifier les informations recueillies.
+Conserver les documents avec les informations qui permettent de les identifier, de les comprendre et de connaître leurs conditions d’accès. Préparer une organisation durable, qui puisse évoluer avec les usages.
 
-La démarche tient compte des variantes et du contexte propre à chaque atelier. Elle cherche à préserver cette diversité plutôt qu’à imposer une seule manière de faire.
+**5. Préparer la restitution**
 
-### Section 3 Access and confidentiality
+Organiser les contenus pour permettre, à terme, de retrouver une opération, d’en comprendre les prérequis ou de suivre un parcours. Ce travail prépare la future plateforme et les ressources de transmission.
 
-**H2:** Des conditions d’accès définies ensemble
+### Bloc 3 Un exemple concret
 
-Documenter un savoir-faire ne signifie pas tout rendre public. Certaines connaissances peuvent être sensibles ou liées à l’activité d’un atelier.
+**H2:** Comprendre pourquoi, retrouver comment
 
-Le périmètre de la documentation, les autorisations et les conditions de diffusion sont définis avant le projet. Une publication peut porter sur une sélection de contenus, tandis que d’autres éléments restent soumis aux restrictions convenues.
+Lorsqu’un artisan ajuste son geste, l’image montre le mouvement. Son explication peut révéler qu’il réagit à une résistance de la matière, à une température ou à un défaut qu’il vient de repérer.
 
-### Section 4 Public stories and archive
+Pour transmettre cette connaissance, nous cherchons à relier le moment filmé à l’explication, aux conditions de réalisation et à l’étape concernée. La personne qui consultera cette ressource pourra ainsi retrouver ce qui a été fait et les raisons de cette décision.
 
-**H2:** Faire découvrir et conserver dans la durée
+### Bloc 4 La base de connaissances
 
-Un film d’atelier peut donner envie de découvrir un métier et les personnes qui le pratiquent. Un fonds documentaire permet d’aller plus loin dans la mémoire du travail.
+**H2:** Ce que nous voulons pouvoir retrouver
 
-Memoria Artis pense ces deux usages ensemble, avec des contenus et des conditions d’accès adaptés à chacun.
+- Une pratique et les différentes étapes qui la composent.
+- Les connaissances ou gestes à maîtriser avant de commencer.
+- Les outils, les matières et les conditions nécessaires.
+- Les points de vigilance, les erreurs et les corrections expliquées.
+- Les documents et les passages précis qui éclairent chaque étape.
+- La personne à l’origine de l’explication et le contexte dans lequel elle s’applique.
 
-### Closing invitation
+Cette organisation se construira progressivement avec les savoir-faire documentés. Elle doit préserver la précision des sources tout en permettant de les consulter autrement qu’en parcourant des heures d’enregistrement.
 
-**H2:** Partir de votre pratique
+### Bloc 5 Les deux temps du projet
 
-Chaque projet commence par une conversation sur ce qui mérite d’être préservé et sur la manière de le faire.
+**H2:** D’abord constituer la base, puis développer ses usages
 
-**CTA:** Parlons de votre atelier → `/fr/contact/?sujet=savoir-faire`
+**Premier temps — Le terrain et la base de connaissances**
+
+Rencontrer les artisans, documenter les pratiques, développer la méthode, structurer les contenus et organiser leur conservation. La transmission est prise en compte dès cette étape, dans le choix des informations recueillies et des liens établis entre elles.
+
+**Second temps — La plateforme de transmission**
+
+Développer un outil pour explorer les connaissances constituées, consulter les sources et suivre des parcours adaptés aux savoir-faire documentés. Les premiers fonds permettront de préciser les besoins et les formes de restitution pertinentes.
+
+### Bloc 6 Fidélité et accès
+
+**H2:** Préserver la parole et les choix de l’artisan
+
+Les explications restent liées à leur source. La structuration doit aider à les retrouver et à les comprendre, en respectant ce que l’artisan a montré et expliqué. Les informations manquantes sont identifiées comme telles ; elles ne sont pas complétées par supposition.
+
+Les autorisations et les conditions d’accès sont définies avec les participants. Certains contenus pourront être diffusés, d’autres rester réservés ou être rendus accessibles plus tard, selon les accords établis.
+
+**CTA:** Proposer un savoir-faire à documenter → `/fr/contact/?sujet=savoir-faire`

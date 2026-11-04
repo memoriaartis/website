@@ -17,7 +17,7 @@ Open `http://localhost:8080/fr/`. Stop the preview with Ctrl+C. Use a local serv
 ## Change words
 
 1. Open `content/home.fr.md`, `project.fr.md`, `approach.fr.md` or `contact.fr.md`.
-2. Edit the French paragraphs or labels after `**H1:**`, `**H2:**` and the other markers. Keep the section separators (`### ...`) and their order. The English section names are internal and never appear on the site.
+2. Edit the French paragraphs or labels after `**H1:**`, `**H2:**` and the other markers. Keep the section separators (`### ...`) and their order. Section names are internal and never appear on the site. The home page contains an opening, the reason to act, three activities, an explanation, two stages and an invitation. Use `**Closing:**` for the paragraph following both stage columns. On the approach page, keep the five numbered method headings and use `- ` for knowledge-list entries.
 3. Edit shared navigation, footer and form wording in `content/ui.fr.json`; page titles and descriptions in `content/metadata.fr.json`.
 4. Run the build command above. It updates all six HTML pages together. Do not edit generated HTML directly.
 
@@ -58,4 +58,4 @@ Add a route map under a real locale key in `content/routes.json`, using translat
 
 ## Verification limits
 
-`scripts/check.ps1` checks generated French preview pages, internal links/assets, skip anchors, one H1 per page, exact editorial text, approach steps, contact labels and disabled submission. It is for the unconfigured preview and intentionally fails after enabling email-only mode. Browser checks at 360, 390, 768 and 1440 pixels, keyboard/focus checks and real contact delivery should be completed before launch. No browser automation or JavaScript runtime is installed in the supplied environment.
+`scripts/check.ps1` checks generated French preview pages, internal links/assets at both the domain root and `/website/`, entry redirects, skip anchors, one H1 per page, exact editorial text, three activities, two stages, five method steps, the illustrative example, contact labels and disabled submission. It is for the unconfigured preview and intentionally fails after enabling email-only mode. Browser checks at 360, 390, 768 and 1440 pixels, keyboard/focus checks and real contact delivery should be completed before launch. No browser automation or JavaScript runtime is installed in the supplied environment.
