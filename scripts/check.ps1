@@ -14,10 +14,15 @@ foreach ($route in $routes.PSObject.Properties) {
   foreach ($link in [regex]::Matches($html, '(?:href|src)=''([^'']+)''')) {
     $url = [Net.WebUtility]::HtmlDecode($link.Groups[1].Value)
     if ($url.StartsWith('#')) { Assert ($html.Contains("id='$($url.Substring(1))'")) "Missing anchor: $url"; continue }
-    if (!$url.StartsWith('/')) { continue }
-    $path = ($url -split '\?')[0]
-    if ($path.EndsWith('/')) { $path += 'index.html' }
-    Assert (Test-Path -LiteralPath (Join-Path $root $path.TrimStart('/')) -PathType Leaf) "Broken local URL: $url"
+    if ($url -match '^[a-z]+:' -or $url.StartsWith('//')) { continue }
+    foreach ($mount in @('', '/website')) {
+      $pageUrl = [Uri]('https://preview.invalid' + $mount + $route.Value)
+      $resolved = [Uri]::new($pageUrl, $url)
+      Assert ($resolved.AbsolutePath.StartsWith($mount + '/')) "Link escapes hosting mount: $url from $pageUrl"
+      $path = $resolved.AbsolutePath.Substring($mount.Length)
+      if ($path.EndsWith('/')) { $path += 'index.html' }
+      Assert (Test-Path -LiteralPath (Join-Path $root $path.TrimStart('/')) -PathType Leaf) "Broken local URL: $url from $pageUrl"
+    }
   }
   if ($route.Name -in @('home','project','approach','contact')) {
     $copy = [IO.File]::ReadAllText((Join-Path $root "content/$($route.Name).fr.md"))
@@ -41,4 +46,10 @@ $contact = [IO.File]::ReadAllText((Join-Path $root 'fr/contact/index.html'))
 Assert ($contact.Contains("type='submit' disabled")) 'Unconfigured contact must not accept submission.'
 foreach ($subject in @('savoir-faire','partenariat','soutien','autre')) { Assert ($contact.Contains("value='$subject'")) "Missing subject: $subject" }
 foreach ($field in @('name','email','organisation','subject','message')) { Assert ($contact.Contains("for='$field'")) "Missing label: $field" }
-Write-Output "Passed: $count pages, local links/assets, anchors, exact editorial copy, heading counts, contact labels and preview safety."
+$entry = [IO.File]::ReadAllText((Join-Path $root 'index.html'))
+$redirect = [regex]::Match($entry, 'url=([^''"]+)').Groups[1].Value
+foreach ($mount in @('', '/website')) {
+  $resolved = [Uri]::new([Uri]("https://preview.invalid$mount/"), $redirect)
+  Assert ($resolved.AbsolutePath -eq "$mount/fr/") "Entry redirect escapes hosting mount: $resolved"
+}
+Write-Output "Passed: $count pages, links/assets at root and /website/, entry redirects, anchors, exact editorial copy, headings, contact labels and preview safety."

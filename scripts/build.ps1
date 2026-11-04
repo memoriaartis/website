@@ -8,6 +8,16 @@ $utf8 = New-Object Text.UTF8Encoding($false)
 function Read-Json($path) { Get-Content -LiteralPath (Join-Path $root $path) -Raw -Encoding UTF8 | ConvertFrom-Json }
 function Escape($value) { [Net.WebUtility]::HtmlEncode([string]$value) }
 function Write-File($path, $body) {
+  if ($path.EndsWith('.html')) {
+    # Relative URLs preserve the mount point on project hosts such as GitHub Pages.
+    # Keep content routes independent of the eventual hosting path.
+    $depth = @($path.Split('/') | Select-Object -SkipLast 1).Count
+    $prefix = '../' * $depth
+    $body = [regex]::Replace($body, '(?<attribute>\b(?:href|src)=[''"])/(?!/)(?<target>[^''"]*)(?<quote>[''"])', {
+      param($match)
+      $match.Groups['attribute'].Value + $prefix + $match.Groups['target'].Value + $match.Groups['quote'].Value
+    })
+  }
   $target = Join-Path $output $path
   New-Item -ItemType Directory -Path (Split-Path $target -Parent) -Force | Out-Null
   [IO.File]::WriteAllText($target, $body, $utf8)
@@ -176,7 +186,7 @@ foreach ($page in $routes.PSObject.Properties) {
 <footer class='site-footer'><div class='wrap'><div class='footer-top'><div class='footer-brand'><a class='wordmark' href='$($routes.home)'>$(Escape $ui.name)</a><p>$(Escape $ui.footerDescription)</p></div><nav class='footer-links' aria-label='$(Escape $ui.footerNavigationLabel)'>$footer</nav></div><div class='copyright'>&copy; $((Get-Date).Year) $(Escape $ui.name)</div></div></footer></body></html>
 "@
 }
-Write-File 'index.html' "<!doctype html><html lang='fr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex'><meta http-equiv='refresh' content='0;url=/fr/'><title>$(Escape $ui.name)</title></head><body><a href='/fr/'>$(Escape $ui.nav.home) &mdash; $(Escape $ui.name)</a></body></html>"
+Write-File 'index.html' "<!doctype html><html lang='fr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex'><meta http-equiv='refresh' content='0;url=fr/'><title>$(Escape $ui.name)</title></head><body><a href='/fr/'>$(Escape $ui.nav.home) &mdash; $(Escape $ui.name)</a></body></html>"
 if ($output -ne $root) { Copy-Item -LiteralPath (Join-Path $root 'assets') -Destination $output -Recurse -Force }
 if ($Production) {
   $urls = ($routeMap.PSObject.Properties | ForEach-Object { $_.Value.PSObject.Properties } | ForEach-Object { "<url><loc>$(Escape ($origin + $_.Value))</loc></url>" }) -join ''

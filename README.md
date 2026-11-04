@@ -12,7 +12,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/preview.ps1
 ```
 
-Open `http://localhost:8080/fr/`. Stop the preview with Ctrl+C. Use a local server rather than opening HTML files directly, because links start at the website root. The execution policy flag applies only to the launched process. Preview serving exposes generated French pages and public assets, not configuration or source files.
+Open `http://localhost:8080/fr/`. Stop the preview with Ctrl+C. Use a local server rather than opening HTML files directly. Generated links, assets and the entry redirect are relative, so the same pages work at a domain root and under a project path such as `https://memoriaartis.github.io/website/`. The execution policy flag applies only to the launched process. Preview serving exposes generated French pages and public assets, not configuration or source files.
 
 ## Change words
 
