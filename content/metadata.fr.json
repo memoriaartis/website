@@ -1,0 +1,8 @@
+{
+  "home":{"title":"Memoria Artis — Mémoire des savoir-faire artisanaux","description":"Memoria Artis documente, structure et préserve les savoir-faire artisanaux pour les transmettre. Découvrez le projet et participez à ses premiers développements."},
+  "project":{"title":"Le projet — Memoria Artis","description":"Une initiative suisse pour conserver les gestes, les connaissances et le contexte du travail artisanal, avec les personnes qui les détiennent."},
+  "approach":{"title":"Notre démarche — Memoria Artis","description":"Comprendre les pratiques, documenter les gestes et organiser leur mémoire : découvrez la démarche de Memoria Artis et ses principes de transmission."},
+  "contact":{"title":"Contact — Memoria Artis","description":"Artisan, atelier, institution ou partenaire : contactez Memoria Artis pour documenter un savoir-faire, proposer une collaboration ou soutenir le projet."},
+  "legal":{"title":"Mentions légales — Memoria Artis","description":"Informations sur l’éditeur et l’hébergement du site Memoria Artis."},
+  "privacy":{"title":"Confidentialité — Memoria Artis","description":"Informations sur l’utilisation des données transmises à Memoria Artis."}
+}

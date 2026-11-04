@@ -1,0 +1,25 @@
+{
+  "name": "Memoria Artis",
+  "navigationLabel": "Navigation principale",
+  "footerNavigationLabel": "Navigation de pied de page",
+  "publisherLabel": "Éditeur du site",
+  "hostingLabel": "Hébergement",
+  "lang": "fr",
+  "skip": "Aller au contenu",
+  "menu": "Menu",
+  "closeMenu": "Fermer le menu",
+  "footerDescription": "Documenter les savoir-faire artisanaux pour les transmettre.",
+  "preview": "Version de travail — le contact n’est pas encore configuré. Aucun message ne peut être envoyé depuis cette prévisualisation.",
+  "legalPreview": "Version de travail — les informations de publication doivent être confirmées avant la mise en ligne.",
+  "privacyPreview": "Version de travail — cette notice sera complétée avec les informations vérifiées sur l’éditeur, l’hébergement, les prestataires et la conservation des données avant la mise en ligne.",
+  "directEmail": "Vous préférez nous écrire directement ?",
+  "nav": {"home":"Accueil", "project":"Le projet", "approach":"Notre démarche", "contact":"Contact", "legal":"Mentions légales", "privacy":"Confidentialité"},
+  "form": {
+    "name":"Nom", "email":"Adresse e-mail", "organisation":"Atelier ou organisation", "optional":"facultatif", "subject":"Votre demande", "message":"Votre message",
+    "subjectPlaceholder":"Choisir un sujet", "subjects":{"savoir-faire":"Documenter un savoir-faire", "partenariat":"Proposer un partenariat", "soutien":"Soutenir le projet", "autre":"Autre demande"},
+    "helper":"Quelques mots sur votre projet et ce qui vous amène à nous contacter.",
+    "privacy":"Les informations transmises servent à traiter votre demande et à vous répondre. Pour en savoir plus, consultez notre page",
+    "submit":"Envoyer le message", "sending":"Envoi en cours…", "successHeading":"Merci pour votre message", "success":"Votre message a bien été envoyé. Nous vous répondrons à l’adresse indiquée.", "failure":"Votre message n’a pas pu être envoyé. Veuillez réessayer ou nous contacter par e-mail.",
+    "required":"Veuillez renseigner ce champ.", "invalidEmail":"Veuillez saisir une adresse e-mail valide.", "invalidSubject":"Veuillez choisir un sujet.", "tooLong":"Veuillez raccourcir ce texte."
+  }
+}
