@@ -1,71 +1,65 @@
-### Bloc 1 Ouverture
+### Ouverture
 
-**Eyebrow:** Association pour la préservation et la transmission des savoir-faire artisanaux
+**Eyebrow:** Association suisse · Savoir-faire artisanaux
 
 **H1:** Préserver les savoir-faire. Rendre leur transmission possible.
 
-**Introduction:** Memoria Artis va à la rencontre des artisans pour documenter leurs gestes, leurs connaissances et leur expérience. Notre association construit une base de connaissances des savoir-faire artisanaux, pensée dès l’origine pour leur transmission.
+**Introduction:** Memoria Artis rencontre les artisans, fait découvrir leur travail et documente ce qu’ils savent faire. Nous construisons une base de connaissances des savoir-faire artisanaux pour que cette expérience puisse être comprise et transmise.
 
 **Primary CTA:** Découvrir l’association → `/fr/le-projet/`
 
-**Secondary CTA:** Comprendre la démarche → `/fr/notre-demarche/`
+**Secondary CTA:** Notre démarche → `/fr/notre-demarche/`
 
-### Bloc 2 La raison d’agir
+### Au contact du travail
 
-**H2:** Ce qu’une vie de pratique apprend
+**H2:** Tout commence par une rencontre
 
-Dans un atelier, le savoir tient parfois à peu de mots : une résistance sous la main, un son qui change, une matière qui atteint le bon état. L’artisan sait quand poursuivre, quand attendre, quand corriger. Ces repères se construisent au fil des années et ne sont pas toujours écrits.
+Dans un atelier, savoir quand attendre, reprendre un geste ou changer d’outil tient à des années de pratique. Ces décisions ne se lisent pas toujours dans l’objet terminé.
 
-Quand une personne cesse son activité, une partie de cette expérience peut disparaître avec elle. Notre responsabilité est d’aller à sa rencontre pendant qu’elle peut encore montrer, expliquer et partager ce qu’elle sait.
+Nous allons à la rencontre des personnes qui peuvent les montrer et les expliquer. Leurs mots, leur expérience et le contexte de leur travail donnent sens à ce que nous recueillons.
 
-Nous voulons que ce savoir puisse servir à d’autres : à un apprenti qui cherche à comprendre, à un artisan qui reprend une technique, à une personne qui souhaite découvrir un métier et son histoire.
+### Nos activités
 
-### Bloc 3 Les activités de l’association
+**H2:** De la découverte à la connaissance
 
-**H2:** Auprès des artisans, au plus près de leur savoir
+**Faire découvrir**
 
-**Rencontrer et faire découvrir**
+Des rencontres et des visites filmées pour entrer dans les ateliers, découvrir des métiers et les personnes qui les exercent.
 
-Nous allons dans les ateliers, échangeons avec les artisans et préparons des visites filmées pour faire connaître leurs métiers, leurs parcours et leur travail.
+**Documenter en profondeur**
 
-**Documenter les savoir-faire**
+Avec l’artisan, recueillir les étapes, les gestes et les raisons de ses choix. Une visite filmée ouvre une porte ; elle ne constitue pas à elle seule un dossier documentaire complet.
 
-Avec les personnes qui les maîtrisent, nous recueillons les étapes d’une pratique, les gestes, les explications et les choix qui permettent de comprendre comment elle se réalise.
+**Relier et préserver**
 
-**Constituer une base de connaissances**
+Organiser les documents avec leurs sources, les prérequis, les outils et les matières, pour retrouver une explication et comprendre sa place dans la pratique.
 
-Nous organisons cette documentation pour relier les techniques, les outils, les matières et les prérequis. Cette base doit préserver le savoir recueilli et préparer ses usages de transmission.
+### Le fil de la transmission
 
-**Text link:** De la rencontre à la transmission → `/fr/notre-demarche/`
+**H2:** Documenter pour que quelqu’un puisse comprendre
 
-### Bloc 4 La précision qui distingue le projet
+Filmer un mouvement ne dit pas toujours pourquoi il est juste. Que faut-il déjà savoir ? Qu’observe l’artisan ? Comment reconnaît-il le résultat attendu ?
 
-**H2:** Relier les connaissances pour pouvoir les transmettre
+La transmission guide nos questions dès le départ. En reliant ces réponses aux documents, nous préparons des ressources que d’autres pourront utiliser pour apprendre.
 
-Une séquence filmée peut montrer un geste. Pour le comprendre, il faut aussi savoir à quelle étape il intervient, ce qu’il faut déjà maîtriser, ce que l’artisan observe et comment il reconnaît le résultat attendu.
+**Text link:** Voir comment les connaissances sont reliées → `/fr/notre-demarche/`
 
-Memoria Artis développe une méthode pour recueillir ces informations, les conserver avec leurs sources et les relier entre elles. C’est cette organisation qui doit permettre de passer d’une documentation à des ressources réellement utilisables pour la transmission.
+### Deux temps
 
-### Bloc 5 Les deux étapes
+**H2:** Le terrain d’abord. Les usages ensuite.
 
-**H2:** Construire aujourd’hui les ressources de transmission de demain
+**01 — Constituer la base de connaissances**
 
-**Étape 1 — Documenter et constituer la base**
+Rencontrer les artisans, documenter leurs pratiques et organiser les connaissances recueillies. La méthode se construit avec les réalités de chaque atelier.
 
-La première étape est consacrée aux rencontres avec les artisans, à la documentation de leurs savoir-faire et à l’organisation des connaissances recueillies. Nous développons la méthode et la structure de la base à partir de ce travail de terrain.
+**02 — Développer la plateforme de transmission**
 
-**Étape 2 — Développer la plateforme de transmission**
+Dans un second temps, développer un outil pour explorer ces connaissances, consulter les sources et suivre des parcours. Cette plateforme n’est pas encore disponible.
 
-Dans un second temps, nous souhaitons développer une plateforme permettant d’explorer cette base, de retrouver des explications et de suivre des parcours autour des savoir-faire documentés. Son développement s’appuiera sur les contenus constitués et les besoins de transmission identifiés.
+### Invitation
 
+**H2:** Un atelier, une pratique, une rencontre à proposer ?
 
+Les premiers projets se construisent avec les artisans et les personnes qui souhaitent contribuer à cette mission.
 
-**Closing:** La transmission guide le projet dès la première rencontre avec un artisan.
-
-### Bloc 6 Invitation
-
-**H2:** Vous détenez un savoir-faire. Aidez-nous à lui donner une suite.
-
-Vous êtes artisan, vous connaissez un atelier ou vous souhaitez soutenir cette mission ? Les premiers projets se construisent avec celles et ceux qui veulent préserver ces connaissances et les rendre transmissibles.
-
-**CTA:** Entrer en contact → `/fr/contact/`
+**CTA:** Parlons-en → `/fr/contact/`

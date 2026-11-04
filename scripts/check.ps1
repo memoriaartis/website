@@ -45,7 +45,18 @@ Assert (([regex]::Matches($homeHtml, '<article>')).Count -eq 5) 'Home must have 
 $approach = [IO.File]::ReadAllText((Join-Path $root 'fr/notre-demarche/index.html'))
 $method = [regex]::Match($approach, '(?s)<ol class=''steps''>(.*?)</ol>').Groups[1].Value
 Assert (([regex]::Matches($method, '<li>')).Count -eq 5) 'Approach must have five method steps.'
-Assert ($approach.Contains("class='section split example'")) 'Illustrative explanation must have a typographic frame.'
+Assert ($approach.Contains("class='knowledge-example'")) 'Illustrative explanation must have a linked information diagram.'
+$example = Get-Content "$root/content/example.fr.json" -Raw -Encoding UTF8 | ConvertFrom-Json
+Assert ($approach.Contains([Net.WebUtility]::HtmlEncode($example.label))) 'Example must be clearly labelled as illustrative.'
+foreach ($node in $example.nodes) { Assert ($approach.Contains([Net.WebUtility]::HtmlEncode($node.text))) 'Example source/relationship missing.' }
+$photoSlots = Get-Content "$root/content/images.fr.json" -Raw -Encoding UTF8 | ConvertFrom-Json
+$planned = 0
+foreach ($slot in $photoSlots.PSObject.Properties) {
+  Assert ($slot.Value.brief) "Missing photo direction: $($slot.Name)"
+  if (!$slot.Value.src) { $planned++ }
+}
+$allPages = ($routes.PSObject.Properties | ForEach-Object { [IO.File]::ReadAllText((Join-Path $root ($_.Value.TrimStart('/') + 'index.html'))) }) -join ''
+Assert (([regex]::Matches($allPages, 'data-preview-image=')).Count -eq $planned) 'Photo slots must all appear in the review preview.'
 $contact = [IO.File]::ReadAllText((Join-Path $root 'fr/contact/index.html'))
 Assert ($contact.Contains("type='submit' disabled")) 'Unconfigured contact must not accept submission.'
 foreach ($subject in @('savoir-faire','partenariat','soutien','autre')) { Assert ($contact.Contains("value='$subject'")) "Missing subject: $subject" }

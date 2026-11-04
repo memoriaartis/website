@@ -15,6 +15,8 @@ try {
       if ($request -notmatch '^GET (/[^ ]*) HTTP/1\.[01]$') { throw 'Not found' }
       $requestPath = $Matches[1]
       $path = [Uri]::UnescapeDataString(($requestPath -split '\?')[0])
+      # Also expose the same build under the real project mount for local QA.
+      if ($path.StartsWith('/website/')) { $path = $path.Substring('/website'.Length) }
       if (($path -split '/') -contains '..' -or ($path -split '/') -contains '.') { throw 'Not found' }
       while ($reader.ReadLine()) { }
       # Serve generated pages and public assets only, never sources/configuration.

@@ -46,5 +46,6 @@
                  "invalidEmail":  "Veuillez saisir une adresse e-mail valide.",
                  "invalidSubject":  "Veuillez choisir un sujet.",
                  "tooLong":  "Veuillez raccourcir ce texte."
-             }
+             },
+    "photoPreview":  "Photographie à fournir"
 }

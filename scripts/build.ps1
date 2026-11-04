@@ -1,4 +1,4 @@
-param([switch]$Production, [string]$OutputDirectory = '', [string]$Locale = 'fr')
+param([switch]$Production, [string]$OutputDirectory = '', [string]$Locale = 'fr', [switch]$OmitMissingImages)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 if (!$OutputDirectory) { $OutputDirectory = $root }
@@ -28,7 +28,7 @@ $routes = $routeMap.$Locale
 if (!$routes) { throw "Unknown locale: $Locale" }
 $ui = Read-Json "content/ui.$Locale.json"
 $metadata = Read-Json "content/metadata.$Locale.json"
-$images = Read-Json 'content/images.json'
+$images = Read-Json "content/images.$Locale.json"
 $origin = $config.origin.TrimEnd('/')
 if ($config.contactEmail -and ($config.contactEmail -notmatch '^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$' -or $config.contactEmail -match '[\r\n]')) { throw 'Contact email is invalid.' }
 if ($origin -and $origin -notmatch '^https://[^/\s?#]+$') { throw 'Origin must be an HTTPS origin without a path.' }
@@ -40,7 +40,13 @@ if ($Production) {
 }
 function Image-Area($id, $class = '') {
   $record = $images.$id
-  if (!$record.src) { return "<div class='image-area $class' aria-hidden='true'></div>" }
+  if (!$record) { throw "Unknown image slot: $id" }
+  foreach ($key in @('ratio','ratioMobile')) { if ($record.$key -notmatch '^\d+ / \d+$') { throw "Invalid ratio for $id" } }
+  $ratioStyle = "--photo-ratio:$($record.ratio);--photo-ratio-mobile:$($record.ratioMobile)"
+  if (!$record.src) {
+    if ($Production -or $OmitMissingImages) { return '' }
+    return "<figure class='photo photo-planning $class' style='$ratioStyle' data-preview-image='$id'><div class='photo-plan'><span>$(Escape $ui.photoPreview)</span><p>$(Escape $record.brief)</p></div></figure>"
+  }
   foreach ($field in @('source','permission','credit','width','height')) {
     if (!$record.$field) { throw "Image $id requires $field." }
   }
@@ -48,8 +54,11 @@ function Image-Area($id, $class = '') {
   if ($record.src -notmatch '^/assets/[a-zA-Z0-9/_.-]+$' -or $record.src.Contains('..')) { throw 'Images must be local assets.' }
   if (!(Test-Path -LiteralPath (Join-Path $root $record.src.TrimStart('/')))) { throw "Missing image: $($record.src)" }
   if ($record.focalPoint -notmatch '^\d{1,3}% \d{1,3}%$') { throw 'Image focalPoint must contain two percentages.' }
+  if ($record.focalPointMobile -notmatch '^\d{1,3}% \d{1,3}%$') { throw 'Image focalPointMobile must contain two percentages.' }
+  if ([int]$record.width -le 0 -or [int]$record.height -le 0) { throw 'Image dimensions must be positive.' }
   $loading = if ($id -eq 'hero') { "fetchpriority='high'" } else { "loading='lazy'" }
-  return "<figure><div class='image-area has-image $class'><img src='$(Escape $record.src)' alt='$(Escape $record.alt)' width='$($record.width)' height='$($record.height)' style='object-position:$($record.focalPoint)' $loading></div><figcaption class='image-credit'>$(Escape $record.credit)</figcaption></figure>"
+  $caption = if ($record.caption) { "<span>$(Escape $record.caption)</span>" } else { '' }
+  return "<figure class='photo $class' style='$ratioStyle;--photo-focus:$($record.focalPoint);--photo-focus-mobile:$($record.focalPointMobile)'><div class='photo-frame'><img src='$(Escape $record.src)' alt='$(Escape $record.alt)' width='$($record.width)' height='$($record.height)' $loading></div><figcaption>$caption<span class='image-credit'>$(Escape $record.credit)</span></figcaption></figure>"
 }
 function Render-Link($text, $kind) {
   $parts = $text -split (' ' + [char]0x2192 + ' '), 2
@@ -107,9 +116,23 @@ function Column-Section($body, $class = '') {
   if ($closingMatch.Success) { $after += "<p class='section-closing'>$(Escape $closingMatch.Groups[1].Value)</p>" }
   return "<section class='section'><h2>$(Escape $heading)</h2><div class='columns $class'>$columns</div>$after</section>"
 }
-function Invitation($body) {
+function Invitation($body, $class = '') {
   $match = [regex]::Match($body, '(?m)^\*\*H2:\*\* (.+)\r?\n')
-  return "<section class='invitation'><h2>$(Escape $match.Groups[1].Value)</h2><div>$(Render-Copy $body.Substring($match.Index + $match.Length))</div></section>"
+  return "<section class='invitation $class'><h2>$(Escape $match.Groups[1].Value)</h2><div>$(Render-Copy $body.Substring($match.Index + $match.Length))</div></section>"
+}
+function Editorial-Section($body, $class = '') {
+  return "<section class='section editorial-copy $class'>$(Render-Copy $body)</section>"
+}
+function Photo-Story($body, $imageId, $class = '') {
+  $image = Image-Area $imageId
+  $missing = if (!$image) { 'without-image' } else { '' }
+  return "<section class='section photo-story $class $missing'><div class='story-copy'>$(Render-Copy $body)</div>$image</section>"
+}
+function Knowledge-Example {
+  $example = Read-Json "content/example.$Locale.json"
+  $nodes = ''
+  foreach ($node in $example.nodes) { $nodes += "<div><dt>$(Escape $node.label)</dt><dd>$(Escape $node.text)</dd></div>" }
+  return "<figure class='knowledge-example'><figcaption><p class='eyebrow'>$(Escape $example.label)</p><h3>$(Escape $example.title)</h3></figcaption><dl class='knowledge-links'>$nodes</dl><p class='example-closing'>$(Escape $example.closing)</p></figure>"
 }
 function Contact-Preview {
   $f = $ui.form
@@ -143,10 +166,11 @@ function Page-Body($id) {
   $sections = Page-Sections $id
   if ($id -eq 'home') {
     $hero = Render-Copy $sections[0]
-    # Wrap the two hero links together without putting editorial text in templates.
     $hero = $hero -replace '(<a class=.button primary.)', '<div class="actions">$1'
     $hero += '</div>'
-    return "<section class='hero'><div class='hero-copy'>$hero</div>$(Image-Area 'hero')</section>$(Split-Section $sections[1])$(Column-Section $sections[2])$(Split-Section $sections[3])$(Column-Section $sections[4] 'two-columns')$(Invitation $sections[5])"
+    $image = Image-Area 'hero'
+    $missing = if (!$image) { 'without-image' } else { '' }
+    return "<section class='hero $missing'><div class='hero-copy'>$hero</div>$image</section>$(Photo-Story $sections[1] 'homeEncounter' 'image-first')$(Column-Section $sections[2] 'activities')$(Editorial-Section $sections[3] 'statement')$(Column-Section $sections[4] 'two-columns development')$(Invitation $sections[5])"
   }
   $intro = "<div class='page-intro'>$(Render-Copy $sections[0])</div>"
   if ($id -eq 'contact') {
@@ -157,24 +181,24 @@ function Page-Body($id) {
     $contact = if ($config.contactEmail) { "<div><p>$(Escape $ui.directEmail)</p><a class='button primary' href='mailto:$(Escape $config.contactEmail)'>$(Escape $config.contactEmail)</a></div>" } else { Contact-Preview }
     return "$intro<div class='contact-layout'><div class='contact-entries'>$entries</div>$contact</div>"
   }
-  $body = "$intro$(Image-Area $id 'wide-image')<div class='editorial'>"
-  $end = if ($id -eq 'approach') { $sections.Count } else { $sections.Count - 1 }
-  for ($index = 1; $index -lt $end; $index++) {
-    if ($id -eq 'approach' -and $sections[$index] -match '(?m)^\*\*1\. ') {
-      $heading = [regex]::Match($sections[$index], '(?m)^\*\*H2:\*\* (.+)').Groups[1].Value.Trim()
-      $steps = ''
-      foreach ($step in [regex]::Matches($sections[$index], '(?ms)^\*\*\d\. (.+?)\*\*\s*\r?\n\s*(.+?)(?=\r?\n\s*\*\*|\z)')) {
-        $steps += "<li><div><h3>$(Escape $step.Groups[1].Value)</h3>$(Render-Copy $step.Groups[2].Value)</div></li>"
-      }
-      $body += "<section class='section split'><h2>$(Escape $heading)</h2><ol class='steps'>$steps</ol></section>"
-    } elseif ($id -eq 'approach' -and $index -eq 3) {
-      $body += Split-Section $sections[$index] '' 'example'
-    } elseif ($id -eq 'approach' -and $index -eq 5) {
-      $body += Column-Section $sections[$index] 'two-columns'
-    } else { $body += Split-Section $sections[$index] }
+  if ($id -eq 'project') {
+    return "$intro$(Photo-Story $sections[1] 'project' 'image-first')$(Column-Section $sections[2] 'beneficiaries')$(Photo-Story $sections[3] 'projectExchange')$(Editorial-Section $sections[4] 'origin')$(Invitation $sections[5] 'quiet')"
   }
-  $closing = if ($id -eq 'project') { Invitation $sections[-1] } else { '' }
-  return "$body</div>$closing"
+  $introImage = Image-Area 'approach'
+  $missing = if (!$introImage) { 'without-image' } else { '' }
+  $body = "<section class='interior-opening $missing'><div class='page-intro'>$(Render-Copy $sections[0])</div>$introImage</section>"
+  $heading = [regex]::Match($sections[1], '(?m)^\*\*H2:\*\* (.+)').Groups[1].Value.Trim()
+  $steps = ''
+  foreach ($step in [regex]::Matches($sections[1], '(?ms)^\*\*\d\. (.+?)\*\*\s*\r?\n\s*(.+?)(?=\r?\n\s*\*\*|\z)')) {
+    $steps += "<li><div><h3>$(Escape $step.Groups[1].Value)</h3>$(Render-Copy $step.Groups[2].Value)</div></li>"
+  }
+  $methodImage = Image-Area 'approachInterview'
+  $missing = if (!$methodImage) { 'without-image' } else { '' }
+  $body += "<section class='section method-section'><h2>$(Escape $heading)</h2><div class='method-layout $missing'><ol class='steps'>$steps</ol>$methodImage</div></section>"
+  $body += "<section class='section example'><div class='example-intro'>$(Render-Copy $sections[2])</div>$(Knowledge-Example)</section>"
+  $body += Photo-Story $sections[3] 'approachDetail' 'image-first'
+  $body += Editorial-Section $sections[4] 'closing-copy'
+  return $body
 }
 foreach ($page in $routes.PSObject.Properties) {
   $id = $page.Name
