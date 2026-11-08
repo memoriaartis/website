@@ -1,0 +1,12 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+{%- if site.production -%}
+User-agent: *
+Allow: /
+Sitemap: {{ site.config.origin }}/sitemap.xml
+{%- else -%}
+User-agent: *
+Disallow: /
+{%- endif %}

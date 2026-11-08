@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+<div class='page-intro'>
+  <p class='eyebrow'>{{ eyebrow }}</p>
+  <h1>{{ heading }}</h1>
+  <p class='intro'>{{ intro }}</p>
+</div>
+<div class='contact-layout'>
+  <div class='contact-entries'>
+    {% for entry in entries %}
+    <article><h2>{{ entry.title }}</h2>{{ entry.text | md | safe }}</article>
+    {% endfor %}
+  </div>
+  {% if site.config.contactEmail %}
+  <div>
+    <p>{{ ui.directEmail }}</p>
+    <a class='button primary' href='mailto:{{ site.config.contactEmail }}'>{{ site.config.contactEmail }}</a>
+  </div>
+  {% else %}
+  <div>
+    <p class='notice' id='contact-notice'>{{ ui.preview }}</p>
+    <form aria-describedby='contact-notice' onsubmit='return false' data-required='{{ ui.form.required }}' data-email-error='{{ ui.form.invalidEmail }}' data-subject-error='{{ ui.form.invalidSubject }}' data-length-error='{{ ui.form.tooLong }}'>
+      <div class='field'><label for='name'>{{ ui.form.name }}</label><input id='name' name='name' autocomplete='name' maxlength='120' required></div>
+      <div class='field'><label for='email'>{{ ui.form.email }}</label><input id='email' name='email' type='email' autocomplete='email' maxlength='254' required></div>
+      <div class='field'><label for='organisation'>{{ ui.form.organisation }} <small>({{ ui.form.optional }})</small></label><input id='organisation' name='organisation' autocomplete='organization' maxlength='180'></div>
+      <div class='field'><label for='subject'>{{ ui.form.subject }}</label><select id='subject' name='subject' required><option value=''>{{ ui.form.subjectPlaceholder }}</option>{% for value, label in ui.form.subjects %}<option value='{{ value }}'>{{ label }}</option>{% endfor %}</select></div>
+      <div class='field'><label for='message'>{{ ui.form.message }}</label><textarea id='message' name='message' maxlength='6000' aria-describedby='message-help' required></textarea><p class='helper' id='message-help'>{{ ui.form.helper }}</p></div>
+      <p class='privacy-copy'>{{ ui.form.privacy }} <a href='{{ routes.privacy }}'>{{ ui.nav.privacy }}</a>.</p>
+      <button class='button primary' type='submit' disabled>{{ ui.form.submit }}</button>
+      <p role='status' aria-live='polite'></p>
+    </form>
+  </div>
+  {% endif %}
+</div>

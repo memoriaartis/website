@@ -1,3 +1,11 @@
+---
+layout: layouts/legal.njk
+permalink: /fr/confidentialite/
+nav: privacy
+title: "Confidentialité — Memoria Artis"
+description: "Informations sur l’utilisation des données transmises à Memoria Artis."
+---
+
 Cette page explique comment les informations que vous nous transmettez sont utilisées lorsque vous contactez Memoria Artis.
 
 ## Les informations transmises

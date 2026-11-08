@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+<div class='page-intro'><h1>{{ ui.nav[nav] }}</h1></div>
+<div class='legal-content'>
+  {% if not site.production %}
+  <p class='notice'>{% if nav == "legal" %}{{ ui.legalPreview }}{% else %}{{ ui.privacyPreview }}{% endif %}</p>
+  {% endif %}
+  {% if nav == "legal" and site.config.publisherName %}
+  <h2>{{ ui.publisherLabel }}</h2>
+  <p>{{ ui.name }}<br>{{ site.config.publisherName }}<br>{{ site.config.publisherAddress }}</p>
+  <h2>{{ ui.hostingLabel }}</h2>
+  <p>{{ site.config.hostingName }}<br>{{ site.config.hostingContact }}</p>
+  {% endif %}
+  {{ content | safe }}
+  {% if site.config.contactEmail %}
+  <p><a href='mailto:{{ site.config.contactEmail }}'>{{ site.config.contactEmail }}</a></p>
+  {% endif %}
+</div>
