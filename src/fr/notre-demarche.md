@@ -3,41 +3,44 @@ layout: layouts/approach.njk
 permalink: /fr/notre-demarche/
 nav: approach
 title: "La démarche — Memoria Artis"
-description: "De la documentation dans les ateliers à une base de connaissances structurée, puis à une future plateforme de transmission : découvrez notre démarche."
+description: "Memoria Artis rencontre les artisans, documente leurs savoir-faire et organise les connaissances recueillies pour les préserver et préparer leur transmission."
 eyebrow: "La démarche"
-heading: "Du geste observé à l’explication que l’on retrouve"
-intro: "Une image montre un mouvement. Pour le comprendre, il faut aussi connaître ce qui le précède, ce que l’artisan observe et les raisons de sa décision. Notre méthode relie ces informations à leurs sources."
+heading: "De la rencontre aux connaissances structurées"
+intro: "Pour comprendre un savoir-faire, il faut relier les gestes aux explications, aux matières, aux outils et au contexte de la pratique. Memoria Artis développe une démarche de documentation avec les artisans afin de recueillir ces éléments et de les organiser."
 introImage: approach
 methodImage: approachInterview
 method:
-  heading: "Cinq étapes, un même fil : comprendre"
+  heading: "Une démarche progressive, construite sur le terrain"
   steps:
-    - title: "Préparer avec l’artisan"
-      text: "Choisir la pratique à documenter, préciser son contexte et ce qu’il importe de conserver. Définir ensemble le périmètre, les autorisations et les conditions d’utilisation."
+    - title: "Rencontrer et inventorier"
+      text: "Aller dans les ateliers, découvrir le métier, l’environnement et les pratiques, puis repérer avec l’artisan les savoir-faire à documenter."
+    - title: "Préparer la documentation"
+      text: "Définir avec l’artisan le savoir-faire concerné, son périmètre et son contexte. Identifier les informations à recueillir, comme les étapes, les gestes, les outils, les matières et les connaissances préalables."
     - title: "Recueillir les gestes et les explications"
-      text: "Observer, filmer, photographier et écouter. Demander ce qui conduit à un choix, faire préciser un terme et revenir sur un moment difficile à interpréter."
-    - title: "Structurer et vérifier"
-      text: "Relier les étapes aux prérequis, aux outils, aux matières et aux points de vigilance. Associer chaque explication aux documents correspondants, puis en vérifier la justesse avec l’artisan."
-    - title: "Archiver avec les sources"
-      text: "Conserver les documents avec leur provenance, leur contexte et leurs conditions d’accès. Garder les variantes propres à l’atelier et signaler les informations manquantes."
-    - title: "Préparer la restitution"
-      text: "Organiser les liens pour retrouver une opération, consulter son explication et comprendre ce qu’elle demande de maîtriser. Ces liens préparent les futurs parcours de transmission."
+      text: "Utiliser les moyens adaptés au projet : vidéo, photographie, son, entretien et descriptions. Chercher à comprendre ce qui est fait, pourquoi, dans quelles conditions et quels signes l’artisan observe."
+    - title: "Structurer et préserver"
+      text: "Relier les documents et les informations aux étapes, aux prérequis, aux outils, aux matières et aux explications pertinentes. Conserver les sources et le contexte pour retrouver la place de chaque élément dans la pratique."
+    - title: "Préparer les usages futurs"
+      text: "Organiser les connaissances pour qu’elles puissent servir à la consultation et à la transmission lorsque les conditions seront réunies. Les outils, les modalités d’accès et les publics restent à définir."
 exampleIntro: |
-  ## Un geste, plusieurs informations à réunir
+  ## Relier les éléments d’une pratique
 
-  L’intérêt de la base de connaissances est de pouvoir passer d’une question à l’explication qui l’éclaire. Cet exemple montre les liens recherchés ; il ne décrit pas un projet documenté.
+  Un geste s’éclaire par ce qui le précède, les outils et les matières utilisés, les signes observés et les décisions de l’artisan. La base de connaissances vise à relier ces éléments aux documents qui les expliquent.
+
+  Cette démarche est en développement. Les protocoles détaillés et leurs outils restent à élaborer et à éprouver sur le terrain.
 sourcesImage: approachDetail
 sources: |
-  ## Garder la source et respecter les limites
+  ## Garder le lien avec les sources et le contexte
 
-  Une explication reste liée à la personne et au contexte qui lui donnent sens. Nous ne complétons pas les informations manquantes par supposition et ne ramenons pas les pratiques de différents ateliers à une seule manière de faire.
+  Les documents sont organisés avec les informations qui permettent de retrouver leur origine et leur contexte. Les variantes, les difficultés et les corrections peuvent éclairer une pratique. Les informations manquantes ne sont pas complétées par supposition.
 
-  Documenter ne signifie pas tout publier. Les contenus diffusés et ceux qui restent réservés sont définis avec les participants. Une visite filmée peut être publique sans ouvrir l’ensemble du fonds documentaire.
+  Documenter ne signifie pas tout publier. Les conditions de conservation, de consultation, de diffusion et de réutilisation seront définies avec les personnes concernées selon les projets. Une visite filmée peut faire découvrir un atelier, sans constituer à elle seule une documentation complète du savoir-faire.
 closing: |
-  ## Retrouver une étape. Comprendre un choix.
+  ## Constituer la base avant d’en organiser le partage
 
-  La future plateforme de transmission devra permettre d’explorer les connaissances constituées, de consulter leurs sources et de suivre des parcours. Ses usages seront précisés à partir des premiers fonds et des besoins des personnes qui les utiliseront.
+  La priorité est de documenter, organiser et conserver les savoirs recueillis. Dans un second temps, des moyens adaptés pourront faciliter leur consultation et leur transmission. La forme de ces outils et les publics concernés restent à définir.
 closingCta:
   label: "Proposer un savoir-faire à documenter"
   href: "/fr/contact/?sujet=savoir-faire"
 ---
+
