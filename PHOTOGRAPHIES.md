@@ -18,4 +18,4 @@ Pour chaque image, fournir le fichier original, sa provenance, l’autorisation 
 
 Les champs sont dans `src/_data/images.json`. Les fichiers image vont dans `src/assets/`. Le cadrage se règle séparément avec `focalPoint` et `focalPointMobile`. Les dimensions réelles, les proportions, la légende et le crédit sont pris en charge par les composants existants ; aucune nouvelle refonte n’est nécessaire.
 
-Les indications apparaissent seulement dans l’aperçu de travail. Le build de production omet les images manquantes et adapte les colonnes, sans cadre vide ni consigne de travail. Utiliser `pnpm build:layout-preview` pour contrôler cette mise en page avant la configuration publique définitive.
+Les indications apparaissent seulement dans l’aperçu de travail. Le build de production omet les images manquantes et adapte les colonnes, sans cadre vide ni consigne de travail. Utiliser `npm run build:layout-preview` pour contrôler cette mise en page avant la configuration publique définitive.
