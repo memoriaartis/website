@@ -1,34 +1,34 @@
 # Memoria Artis
 
-French static website built with [Eleventy](https://www.11ty.dev/) and [pnpm](https://pnpm.io/). No remote fonts, trackers or server application are required. Local and GitHub Pages preview builds keep search indexing disabled. No photograph, publisher identity or public contact address has been invented.
+French static website built with [Eleventy](https://www.11ty.dev/) and npm. No remote fonts, trackers or server application are required. Local and GitHub Pages preview builds keep search indexing disabled. No photograph, publisher identity or public contact address has been invented.
 
 ## Setup
 
 ```bash
-pnpm install
+npm ci
 ```
 
 ## Preview
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open `http://localhost:8080/fr/` on this machine, or `http://<your-lan-ip>:8080/fr/` from a phone on the same network (the dev server listens on `0.0.0.0`). Stop with Ctrl+C. Generated links and assets are relative so the same build also works under a project Pages mount such as `/website/`.
 
 ```bash
-pnpm build
-pnpm check
+npm run build
+npm run check
 ```
 
-`pnpm build` writes the site to `_site/`. `pnpm check` verifies the generated French pages, internal links/assets at both the domain root and `/website/`, redirects, skip anchors, one H1 per page, editorial copy, three activities, two stages, five method steps, diagram content, photo slots and contact labels. It currently expects the unconfigured contact preview.
+`npm run build` writes the site to `_site/`. `npm run check` verifies the generated French pages, internal links/assets at both the domain root and `/website/`, redirects, skip anchors, one H1 per page, editorial copy, three activities, two stages, five method steps, diagram content, photo slots and contact labels. It currently expects the unconfigured contact preview.
 
 ## Change words
 
 1. Edit the Markdown pages in `src/fr/` (`index.md`, `le-projet.md`, `notre-demarche.md`, `contact.md`, …).
 2. Page copy uses standard Markdown and YAML front matter. Keep the existing front-matter keys (`heading`, `intro`, `activities`, CTAs, image slot ids, …) so the layouts keep working.
 3. Shared navigation, footer and form wording live in `src/_data/ui.json`. The illustrative diagram is in `src/_data/example.json`.
-4. Run `pnpm build` (or keep `pnpm dev` running). Do not edit generated HTML in `_site/` directly.
+4. Run `npm run build` (or keep `npm run dev` running). Do not edit generated HTML in `_site/` directly.
 
 Layouts live in `src/_includes/layouts/`. `src/assets/site.css` controls appearance; `src/assets/site.js` controls the menu, preview validation and subject preselection. Content remains readable and navigation remains available without JavaScript.
 
@@ -44,7 +44,7 @@ The seven photo slots have a defined editorial role and proportions. In a workin
 To inspect the final typography when images are missing, without supplying fake publisher/contact details:
 
 ```bash
-pnpm build:layout-preview
+npm run build:layout-preview
 ```
 
 This remains a non-indexable preview with the current contact/legal notices. It is not a production build. The real production build also omits missing images, and still requires the verified launch information below.
@@ -62,7 +62,7 @@ A future working form requires a separate secure endpoint with server-side valid
 Complete the checklist in `LAUNCH-CHECKLIST.md`. In `site.config.json`, supply the approved production origin, contact email, publisher name, public correspondence address and real hosting provider/contact. Complete `src/fr/confidentialite.md` for the actual email and hosting setup, then set `privacyApproved` to `true` after review. Do not add private addresses without explicit approval.
 
 ```bash
-pnpm build:production
+npm run build:production
 ```
 
 The public build stops when required details are missing. It emits canonical URLs, a sitemap with configured routes and indexable robots rules. Preview builds emit `noindex` and `Disallow: /`. The origin must be an HTTPS origin such as the actual production domain, with no path. No alternate-language metadata is emitted for nonexistent translations.
@@ -71,7 +71,7 @@ Deploy **only the contents of `_site/`**. Do not upload this entire repository: 
 
 ## GitHub Pages
 
-Pushing to `main` runs `.github/workflows/pages.yml`: install with pnpm, build the preview site, run checks, then publish `_site/` with GitHub Actions. In the repository settings, set Pages to **GitHub Actions**. Until launch details are confirmed, the workflow publishes the non-indexable preview build (`pnpm build`). Switch the workflow to `pnpm build:production` only after `site.config.json` and the privacy notice are approved.
+Pushing to `main` runs `.github/workflows/pages.yml`: install with npm, build the preview site, run checks, then publish `_site/` with GitHub Actions. In the repository settings, set Pages to **GitHub Actions**. Until launch details are confirmed, the workflow publishes the non-indexable preview build (`npm run build`). Switch the workflow to `npm run build:production` only after `site.config.json` and the privacy notice are approved.
 
 ## Add a language later
 
