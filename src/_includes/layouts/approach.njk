@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+---
+<section class='interior-opening {% if not (introImage | hasPhoto) %}without-image{% endif %}'>
+  <div class='page-intro'>
+    <p class='eyebrow'>{{ eyebrow }}</p>
+    <h1>{{ heading }}</h1>
+    <p class='intro'>{{ intro }}</p>
+  </div>
+  {{ introImage | photo | safe }}
+</section>
+
+<section class='section method-section'>
+  <h2>{{ method.heading }}</h2>
+  <div class='method-layout {% if not (methodImage | hasPhoto) %}without-image{% endif %}'>
+    <ol class='steps'>
+      {% for step in method.steps %}
+      <li><div><h3>{{ step.title }}</h3>{{ step.text | md | safe }}</div></li>
+      {% endfor %}
+    </ol>
+    {{ methodImage | photo | safe }}
+  </div>
+</section>
+
+<section class='section example'>
+  <div class='example-intro'>{{ exampleIntro | md | safe }}</div>
+  <figure class='knowledge-example'>
+    <figcaption>
+      <p class='eyebrow'>{{ example.label }}</p>
+      <h3>{{ example.title }}</h3>
+    </figcaption>
+    <dl class='knowledge-links'>
+      {% for node in example.nodes %}
+      <div><dt>{{ node.label }}</dt><dd>{{ node.text }}</dd></div>
+      {% endfor %}
+    </dl>
+    <p class='example-closing'>{{ example.closing }}</p>
+  </figure>
+</section>
+
+<section class='section photo-story image-first {% if not (sourcesImage | hasPhoto) %}without-image{% endif %}'>
+  <div class='story-copy'>{{ sources | md | safe }}</div>
+  {{ sourcesImage | photo | safe }}
+</section>
+
+<section class='section editorial-copy closing-copy'>
+  {{ closing | md | safe }}
+  <a class='button primary' href='{{ closingCta.href }}'>{{ closingCta.label }}</a>
+</section>

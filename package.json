@@ -1,0 +1,20 @@
+{
+  "name": "memoria-artis-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve --port=8080",
+    "build": "eleventy",
+    "build:production": "SITE_PRODUCTION=1 eleventy",
+    "build:layout-preview": "OMIT_MISSING_IMAGES=1 eleventy --output=.preview/final-layout",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "markdown-it": "^15.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.28.1"
+}
