@@ -2,13 +2,13 @@
 layout: layouts/home.njk
 permalink: /fr/
 nav: home
-title: "Memoria Artis — Préserver et transmettre les savoir-faire"
-description: "Memoria Artis rencontre les artisans et documente leurs savoir-faire pour construire une base de connaissances pensée pour la préservation et la transmission."
+title: "Memoria Artis — Documenter et sauvegarder les savoir-faire artisanaux"
+description: "Memoria Artis va à la rencontre des artisans pour documenter et sauvegarder leurs savoir-faire, les organiser dans une base de connaissances et préparer leur transmission."
 eyebrow: "Association suisse · Savoir-faire artisanaux"
-heading: "Préserver les savoir-faire. Rendre leur transmission possible."
-intro: "Memoria Artis rencontre les artisans, fait découvrir leur travail et documente ce qu’ils savent faire. Nous construisons une base de connaissances des savoir-faire artisanaux pour que cette expérience puisse être comprise et transmise."
+heading: "Documenter et sauvegarder les savoir-faire artisanaux"
+intro: "Memoria Artis va à la rencontre des artisans pour comprendre leurs pratiques, identifier avec eux les savoir-faire à documenter et constituer une base de connaissances organisée. Cette base vise à préserver les savoirs recueillis et à préparer leur transmission."
 primaryCta:
-  label: "Découvrir l’association"
+  label: "Découvrir le projet"
   href: "/fr/le-projet/"
 secondaryCta:
   label: "Notre démarche"
@@ -18,38 +18,39 @@ encounterImage: homeEncounter
 encounter: |
   ## Tout commence par une rencontre
 
-  Dans un atelier, savoir quand attendre, reprendre un geste ou changer d’outil tient à des années de pratique. Ces décisions ne se lisent pas toujours dans l’objet terminé.
+  Les savoir-faire artisanaux vivent dans les personnes qui les pratiquent et dans les ateliers où ils s’exercent. Ils se transmettent par la pratique, l’observation et l’expérience. Une partie de ce savoir se manifeste dans un geste, un choix ou une façon de reconnaître l’état d’une matière.
 
-  Nous allons à la rencontre des personnes qui peuvent les montrer et les expliquer. Leurs mots, leur expérience et le contexte de leur travail donnent sens à ce que nous recueillons.
+  Nous allons à la rencontre des artisans pour découvrir leur métier, leur environnement et leurs pratiques. Leurs explications et le contexte de leur travail donnent sens à ce que nous recueillons.
 activities:
-  heading: "De la découverte à la connaissance"
+  heading: "De la rencontre aux connaissances structurées"
   items:
-    - title: "Faire découvrir"
-      text: "Des rencontres et des visites filmées pour entrer dans les ateliers, découvrir des métiers et les personnes qui les exercent."
-    - title: "Documenter en profondeur"
-      text: "Avec l’artisan, recueillir les étapes, les gestes et les raisons de ses choix. Une visite filmée ouvre une porte ; elle ne constitue pas à elle seule un dossier documentaire complet."
-    - title: "Relier et préserver"
-      text: "Organiser les documents avec leurs sources, les prérequis, les outils et les matières, pour retrouver une explication et comprendre sa place dans la pratique."
+    - title: "Rencontrer et inventorier"
+      text: "Découvrir les ateliers et les pratiques, puis identifier avec les artisans les savoir-faire qui méritent une documentation approfondie."
+    - title: "Documenter"
+      text: "Recueillir les gestes et les explications par la vidéo, la photographie, le son, l’entretien et des descriptions, selon les besoins du projet."
+    - title: "Structurer et préserver"
+      text: "Organiser les connaissances et les documents, les relier aux étapes, aux outils, aux matières et à leur contexte, tout en gardant le lien avec leurs sources."
 statement: |
-  ## Documenter pour que quelqu’un puisse comprendre
+  ## Documenter pour préserver et préparer la transmission
 
-  Filmer un mouvement ne dit pas toujours pourquoi il est juste. Que faut-il déjà savoir ? Qu’observe l’artisan ? Comment reconnaît-il le résultat attendu ?
+  Filmer un geste ne suffit pas toujours à comprendre une pratique. Que faut-il déjà savoir ? Qu’observe l’artisan ? Pourquoi choisit-il cette manière de faire et comment corrige-t-il une erreur ?
 
-  La transmission guide nos questions dès le départ. En reliant ces réponses aux documents, nous préparons des ressources que d’autres pourront utiliser pour apprendre.
+  La transmission guide le travail de documentation dès le départ. En recueillant ces explications avec les artisans et en les reliant aux documents correspondants, nous préparons des connaissances qui pourront servir à comprendre et à apprendre.
 statementLink:
-  label: "Voir comment les connaissances sont reliées"
+  label: "Découvrir notre démarche"
   href: "/fr/notre-demarche/"
 stages:
-  heading: "Le terrain d’abord. Les usages ensuite."
+  heading: "La base d’abord. Le partage ensuite."
   items:
-    - title: "01 — Constituer la base de connaissances"
-      text: "Rencontrer les artisans, documenter leurs pratiques et organiser les connaissances recueillies. La méthode se construit avec les réalités de chaque atelier."
-    - title: "02 — Développer la plateforme de transmission"
-      text: "Dans un second temps, développer un outil pour explorer ces connaissances, consulter les sources et suivre des parcours. Cette plateforme n’est pas encore disponible."
+    - title: "01 — Documenter et constituer la base"
+      text: "Rencontrer les artisans, identifier les savoir-faire à documenter, recueillir les connaissances et développer progressivement une base organisée."
+    - title: "02 — Préparer les usages futurs"
+      text: "Dans un second temps, des moyens de consultation et de partage pourront faciliter la transmission. Les outils, les conditions d’accès et les publics restent à définir."
 invitation:
-  heading: "Un atelier, une pratique, une rencontre à proposer ?"
-  text: "Les premiers projets se construisent avec les artisans et les personnes qui souhaitent contribuer à cette mission."
+  heading: "Un atelier, un savoir-faire, une rencontre à proposer ?"
+  text: "Les projets se construisent avec les artisans et les personnes qui souhaitent contribuer à cette mission."
   cta:
     label: "Parlons-en"
     href: "/fr/contact/"
 ---
+

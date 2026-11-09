@@ -2,47 +2,48 @@
 layout: layouts/project.njk
 permalink: /fr/le-projet/
 nav: project
-title: "L’association — Memoria Artis"
-description: "Découvrez la mission de Memoria Artis : rencontrer les artisans, préserver leurs connaissances et préparer la transmission des savoir-faire artisanaux."
-eyebrow: "L’association"
-heading: "Une expérience à partager, une mémoire à faire vivre"
-intro: "Memoria Artis est une association suisse consacrée à la préservation et à la transmission des savoir-faire artisanaux. Son but est collectif : permettre à l’expérience des personnes de métier de servir à d’autres."
+title: "Le projet — Memoria Artis"
+description: "La mission de Memoria Artis est de documenter et sauvegarder les savoir-faire artisanaux, en constituant une base de connaissances qui prépare leur transmission."
+eyebrow: "Le projet"
+heading: "Préserver ce que les artisans savent faire"
+intro: "Memoria Artis est une association suisse consacrée à la documentation et à la sauvegarde des savoir-faire artisanaux. En allant à la rencontre des artisans, l’association cherche à comprendre leurs pratiques, à recueillir leurs connaissances et à les organiser pour les préserver et préparer leur transmission."
 reasonImage: project
 reason: |
-  ## Ce qu’une vie de pratique peut apporter aux suivantes
+  ## Des savoirs qui vivent dans les pratiques
 
-  Un artisan apprend à lire une matière, à reconnaître une difficulté, à corriger un résultat. Une partie de ce savoir reste dans les mains et dans les échanges de l’atelier.
+  Les savoir-faire se transmettent par la pratique, l’observation et l’expérience. Une partie de ces connaissances n’est pas écrite. Elle se manifeste dans un geste, un choix, une façon de reconnaître l’état d’une matière ou de corriger une erreur.
 
-  Quand une activité s’arrête, ces repères peuvent se perdre. Les recueillir pendant que la personne peut encore les expliquer, c’est conserver des points d’appui pour celles et ceux qui viendront après.
+  Lorsqu’un atelier ferme ou qu’un artisan cesse son activité, des connaissances peuvent devenir difficiles à retrouver. Une photographie, un film ou une description isolée peut en conserver une trace, sans toujours expliquer comment les éléments d’une pratique s’articulent.
 
-  Une documentation ne remplace ni l’exercice du métier ni l’apprentissage auprès d’une personne expérimentée. Elle peut aider à comprendre, à reprendre une technique et à renouer une transmission.
+  Memoria Artis souhaite recueillir ces connaissances avec les artisans, les replacer dans leur contexte et les organiser afin qu’elles puissent être conservées. Une archive peut aider à comprendre et à apprendre. Elle ne remplace ni la pratique ni la relation avec un professionnel.
 beneficiaries:
-  heading: "Des connaissances qui puissent circuler"
+  heading: "Une base de connaissances à construire"
   items:
-    - title: "Aux artisans"
-      text: "Garder une trace précise de leur pratique, de ses variantes et de l’histoire de leur atelier."
-    - title: "Aux personnes qui apprennent"
-      text: "Retrouver une explication, comprendre un choix et nourrir un apprentissage qui se poursuit par la pratique."
-    - title: "Aux acteurs de la transmission"
-      text: "Écoles, institutions culturelles et associations professionnelles peuvent s’appuyer sur ces ressources pour préparer des usages pédagogiques ou faire découvrir un métier."
+    - title: "Les artisans"
+      text: "Ils contribuent à identifier les savoir-faire à documenter et à expliquer les gestes, les choix et le contexte de leur pratique."
+    - title: "Les personnes qui apprendront"
+      text: "Les connaissances recueillies ont vocation à aider à comprendre les pratiques et à préparer leur transmission. Les modalités de consultation restent à définir."
+    - title: "Les acteurs de la transmission"
+      text: "Les écoles professionnelles, les institutions et les musées sont des publics possibles, parmi d’autres. Les usages dépendront des projets et des conditions convenues."
 contributionImage: projectExchange
 contribution: |
-  ## Une mission à porter ensemble
+  ## Une mission à construire avec les artisans
 
-  Les artisans définissent avec nous ce qui mérite d’être documenté et les conditions de leur participation. Leur regard permet de vérifier la justesse des explications recueillies.
+  Les rencontres permettent de découvrir les ateliers et de repérer les savoir-faire qui méritent une documentation approfondie. Les visites sont une activité de l’association et une première approche possible. Elles ne produisent pas automatiquement une archive complète.
 
-  Un atelier à proposer, des compétences à partager, un soutien matériel ou financier : chacun peut contribuer aux premiers projets. Les partenariats se construisent autour d’un travail concret et d’usages convenus ensemble.
+  Les artisans prennent part à la définition du savoir-faire documenté, de son périmètre et du contexte à conserver. Les conditions de participation, de conservation et d’utilisation des documents sont à définir avec les personnes concernées selon chaque projet.
 contributionLink:
   label: "Proposer une contribution"
   href: "/fr/contact/"
 origin: |
-  ## À l’origine de Memoria Artis
+  ## Une association suisse
 
-  L’association est portée par Grégoire Mével, en Suisse. Elle se développe à partir des rencontres dans les ateliers et d’une conviction : préserver un savoir demande aussi de préparer la manière dont il pourra être transmis.
+  Memoria Artis est une association suisse qui agit à partir des rencontres dans les ateliers et d’une conviction : préserver un savoir demande de comprendre la pratique et de préparer les conditions de sa transmission.
 invitation:
-  heading: "Vous souhaitez prendre part à cette mission ?"
-  text: "Présentez-nous votre pratique, votre structure ou la contribution que vous imaginez."
+  heading: "Vous souhaitez contribuer au projet ?"
+  text: "Présentez-nous votre atelier, votre pratique ou la contribution que vous imaginez."
   cta:
-    label: "Contacter l’association"
+    label: "Contacter Memoria Artis"
     href: "/fr/contact/"
 ---
+
