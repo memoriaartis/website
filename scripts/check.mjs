@@ -19,8 +19,8 @@ const expectedCopy = {
     "Documenter",
     "Structurer et préserver",
     "Documenter pour préserver et préparer la transmission",
-    "01 — Documenter et constituer la base",
-    "02 — Préparer les usages futurs",
+    "01. Documenter et constituer la base",
+    "02. Préparer les usages futurs",
     "Parlons-en",
   ],
   project: [
@@ -59,7 +59,7 @@ function decodeEntities(text) {
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
-    .replace(/&mdash;/g, "—")
+    .replace(/&mdash;/g, String.fromCharCode(0x2014))
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)));
 }
 

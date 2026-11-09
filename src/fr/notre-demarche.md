@@ -2,7 +2,7 @@
 layout: layouts/approach.njk
 permalink: /fr/notre-demarche/
 nav: approach
-title: "La démarche — Memoria Artis"
+title: "La démarche | Memoria Artis"
 description: "Memoria Artis rencontre les artisans, documente leurs savoir-faire et organise les connaissances recueillies pour les préserver et préparer leur transmission."
 eyebrow: "La démarche"
 heading: "De la rencontre aux connaissances structurées"

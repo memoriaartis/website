@@ -2,7 +2,7 @@
 layout: layouts/project.njk
 permalink: /fr/le-projet/
 nav: project
-title: "Le projet — Memoria Artis"
+title: "Le projet | Memoria Artis"
 description: "La mission de Memoria Artis est de documenter et sauvegarder les savoir-faire artisanaux, en constituant une base de connaissances qui prépare leur transmission."
 eyebrow: "Le projet"
 heading: "Préserver ce que les artisans savent faire"

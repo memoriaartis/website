@@ -9,9 +9,9 @@
     "menu":  "Menu",
     "closeMenu":  "Fermer le menu",
     "footerDescription":  "Association suisse pour la préservation et la transmission des savoir-faire artisanaux.",
-    "preview":  "Version de travail — le contact n’est pas encore configuré. Aucun message ne peut être envoyé depuis cette prévisualisation.",
-    "legalPreview":  "Version de travail — les informations de publication doivent être confirmées avant la mise en ligne.",
-    "privacyPreview":  "Version de travail — cette notice sera complétée avec les informations vérifiées sur l’éditeur, l’hébergement, les prestataires et la conservation des données avant la mise en ligne.",
+    "preview":  "Version de travail : le contact n’est pas encore configuré. Aucun message ne peut être envoyé depuis cette prévisualisation.",
+    "legalPreview":  "Version de travail : les informations de publication doivent être confirmées avant la mise en ligne.",
+    "privacyPreview":  "Version de travail : cette notice sera complétée avec les informations vérifiées sur l’éditeur, l’hébergement, les prestataires et la conservation des données avant la mise en ligne.",
     "directEmail":  "Vous préférez nous écrire directement ?",
     "nav":  {
                 "home":  "Accueil",

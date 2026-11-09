@@ -2,7 +2,7 @@
 layout: layouts/legal.njk
 permalink: /fr/mentions-legales/
 nav: legal
-title: "Mentions légales — Memoria Artis"
+title: "Mentions légales | Memoria Artis"
 description: "Informations sur l’éditeur et l’hébergement du site Memoria Artis."
 ---
 

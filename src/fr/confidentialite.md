@@ -2,7 +2,7 @@
 layout: layouts/legal.njk
 permalink: /fr/confidentialite/
 nav: privacy
-title: "Confidentialité — Memoria Artis"
+title: "Confidentialité | Memoria Artis"
 description: "Informations sur l’utilisation des données transmises à Memoria Artis."
 ---
 

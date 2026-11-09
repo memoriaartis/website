@@ -2,7 +2,7 @@
   "hero": {
     "brief": "Un artisan au travail : une personne, un geste et la matière dans le même cadre.",
     "src": "/assets/images/glassblowing.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Green Liu",
     "caption": "Soufflage du verre en atelier",
@@ -19,7 +19,7 @@
   "homeEncounter": {
     "brief": "Une rencontre dans un atelier, ou un échange pendant un travail de documentation.",
     "src": "/assets/images/basketry-filming.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : PJ Wallace",
     "caption": "Geste de vannerie filmé en atelier",
@@ -36,7 +36,7 @@
   "project": {
     "brief": "Un atelier habité : la personne, son environnement et les traces du travail en cours.",
     "src": "/assets/images/luthier-workshop.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Mario La Pergola",
     "caption": "Un luthier au travail à l’établi",
@@ -53,7 +53,7 @@
   "projectExchange": {
     "brief": "Un échange dans un atelier, autour d’un outil, d’une matière ou d’un objet.",
     "src": "/assets/images/shoemaker-archive.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Marshall Public Library",
     "caption": "Transmission d’un geste de cordonnerie",
@@ -70,7 +70,7 @@
   "approach": {
     "brief": "L’observation d’un geste précis, avec l’outil et la matière visibles.",
     "src": "/assets/images/lathe-workshop.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Mick Henson",
     "caption": "Usinage d’une pièce au tour",
@@ -87,7 +87,7 @@
   "approachInterview": {
     "brief": "Un entretien ou une explication de l’artisan pendant la documentation de son travail.",
     "src": "/assets/images/machinist-at-work.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Rawan Yasser",
     "caption": "Réglage d’une pièce sur le tour",
@@ -104,7 +104,7 @@
   "approachDetail": {
     "brief": "Un détail d’outil, de matière ou de surface de travail qui situe la pratique dans son contexte.",
     "src": "/assets/images/watchmaker-detail.jpg",
-    "source": "Unsplash — image téléchargée et fournie par l’utilisateur",
+    "source": "Unsplash : image téléchargée et fournie par l’utilisateur",
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Vanishing Point Images",
     "caption": "Examen d’un mécanisme de montre à la loupe",

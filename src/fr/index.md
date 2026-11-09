@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 permalink: /fr/
 nav: home
-title: "Memoria Artis — Documenter et sauvegarder les savoir-faire artisanaux"
+title: "Memoria Artis | Documenter et sauvegarder les savoir-faire artisanaux"
 description: "Memoria Artis va à la rencontre des artisans pour documenter et sauvegarder leurs savoir-faire, les organiser dans une base de connaissances et préparer leur transmission."
 eyebrow: "Association suisse · Savoir-faire artisanaux"
 heading: "Documenter et sauvegarder les savoir-faire artisanaux"
@@ -42,9 +42,9 @@ statementLink:
 stages:
   heading: "La base d’abord. Le partage ensuite."
   items:
-    - title: "01 — Documenter et constituer la base"
+    - title: "01. Documenter et constituer la base"
       text: "Rencontrer les artisans, identifier les savoir-faire à documenter, recueillir les connaissances et développer progressivement une base organisée."
-    - title: "02 — Préparer les usages futurs"
+    - title: "02. Préparer les usages futurs"
       text: "Dans un second temps, des moyens de consultation et de partage pourront faciliter la transmission. Les outils, les conditions d’accès et les publics restent à définir."
 invitation:
   heading: "Un atelier, un savoir-faire, une rencontre à proposer ?"

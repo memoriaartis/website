@@ -358,7 +358,6 @@ h2 { line-height: .98; letter-spacing: -.025em; }
 .story-copy h2, .example-intro h2, .editorial-copy h2 { font-size: clamp(37px, 4.4vw, 62px); }
 .columns article { border-top: 2px solid var(--ink); padding-top: 19px; }
 .columns h3, .steps h3 { font-size: clamp(25px, 2.8vw, 36px); }
-.beneficiaries article::before { content: '—'; display: block; margin-bottom: 14px; font-size: 23px; }
 .method-layout { grid-template-columns: 1.2fr .9fr; gap: 8%; }
 .steps li { grid-template-columns: 48px 1fr; gap: 22px; padding-block: 25px; border-top-color: var(--line); }
 .steps li::before { font: 25px/1 Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: var(--ink); }

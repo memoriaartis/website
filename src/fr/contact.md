@@ -2,7 +2,7 @@
 layout: layouts/contact.njk
 permalink: /fr/contact/
 nav: contact
-title: "Contact — Memoria Artis"
+title: "Contact | Memoria Artis"
 description: "Proposez un atelier, un savoir-faire à documenter, un partenariat ou un soutien aux premiers projets de l’association Memoria Artis."
 eyebrow: "Contact"
 heading: "Partons de votre proposition"
