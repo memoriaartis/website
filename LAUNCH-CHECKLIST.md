@@ -9,5 +9,5 @@
 - [x] Review the current preview at 360, 390, 768 and 1440 pixels in Edge: no horizontal overflow, broken images or relevant console errors. Review actual photographic crops after assets are supplied.
 - [x] Check keyboard navigation, visible focus, Enter/Tab/Escape menu behaviour, all three subject query values and an unknown value, inline validation, retained text, and no-JavaScript readability.
 - [ ] Test email-only contact on the target device, or fully implement/test a separate secure form endpoint before enabling submissions.
-- [ ] Build with `pnpm build:production`; check canonical origin, sitemap and robots rules.
+- [ ] Build with `npm run build:production`; check canonical origin, sitemap and robots rules.
 - [ ] Deploy only after the owner gives deployment instructions. Publish only `_site/` contents (GitHub Actions does this from `main`); keep source and this checklist private.
