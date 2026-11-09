@@ -6,7 +6,7 @@
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Green Liu",
     "caption": "Soufflage du verre en atelier",
-    "annotation": { "label": { "x": 80, "y": 46 }, "line": { "x1": 78, "y1": 50, "x2": 80, "y2": 85 } },
+    "annotation": { "label": { "x": 80, "y": 46 }, "line": { "x1": 75, "y1": 50, "x2": 79, "y2": 99 } },
     "annotationMobile": { "label": { "x": 94, "y": 57 }, "line": { "x1": 87, "y1": 67, "x2": 90, "y2": 91 } },
     "alt": "Un artisan façonne du verre chauffé au chalumeau.",
     "width": 2400,
