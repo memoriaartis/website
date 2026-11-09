@@ -24,6 +24,19 @@ function photoVisible(id, images, { production, omitMissingImages }) {
   return !(production || omitMissingImages);
 }
 
+function sourcePoint(x, y, image, frameRatio, focalPoint) {
+  const [focalX, focalY] = focalPoint.split(" ").map((value) => Number.parseFloat(value) / 100);
+  const frameWidth = frameRatio;
+  const frameHeight = 1;
+  const scale = Math.max(frameWidth / image.width, frameHeight / image.height);
+  const offsetX = (frameWidth - image.width * scale) * focalX;
+  const offsetY = (frameHeight - image.height * scale) * focalY;
+  return {
+    x: ((x / 100 * frameWidth - offsetX) / scale / image.width) * 100,
+    y: ((y / 100 * frameHeight - offsetY) / scale / image.height) * 100,
+  };
+}
+
 function renderPhoto(id, images, ui, { production, omitMissingImages }) {
   const record = images[id];
   if (!record) throw new Error(`Unknown image slot: ${id}`);
@@ -63,7 +76,6 @@ function renderPhoto(id, images, ui, { production, omitMissingImages }) {
   let caption = "";
   if (record.caption) {
     const desktop = record.annotation;
-    const mobile = record.annotationMobile || desktop;
     const coordinate = (value, field) => {
       const number = Number(value);
       if (!Number.isFinite(number) || number < 0 || number > 100) {
@@ -71,22 +83,20 @@ function renderPhoto(id, images, ui, { production, omitMissingImages }) {
       }
       return number;
     };
-    if (!desktop || !mobile) throw new Error(`Image ${id} requires annotation coordinates.`);
+    if (!desktop) throw new Error(`Image ${id} requires annotation coordinates.`);
     const labelX = coordinate(desktop.label?.x, "label.x");
     const labelY = coordinate(desktop.label?.y, "label.y");
     const x1 = coordinate(desktop.line?.x1, "line.x1");
     const y1 = coordinate(desktop.line?.y1, "line.y1");
     const x2 = coordinate(desktop.line?.x2, "line.x2");
     const y2 = coordinate(desktop.line?.y2, "line.y2");
-    const mobileX = coordinate(mobile.label?.x, "mobile.label.x");
-    const mobileY = coordinate(mobile.label?.y, "mobile.label.y");
-    const mobileX1 = coordinate(mobile.line?.x1, "mobile.line.x1");
-    const mobileY1 = coordinate(mobile.line?.y1, "mobile.line.y1");
-    const mobileX2 = coordinate(mobile.line?.x2, "mobile.line.x2");
-    const mobileY2 = coordinate(mobile.line?.y2, "mobile.line.y2");
     const alignment = desktop.label?.align === "left" ? "align-left" : "align-right";
-    const mobileAlignment = mobile.label?.align === "left" ? "align-left" : "align-right";
-    caption = `<svg class='photo-callout' viewBox='0 0 100 100' preserveAspectRatio='none' aria-hidden='true' focusable='false'><line x1='${x1}' y1='${y1}' x2='${x2}' y2='${y2}'/></svg><svg class='photo-callout photo-callout-mobile' viewBox='0 0 100 100' preserveAspectRatio='none' aria-hidden='true' focusable='false'><line x1='${mobileX1}' y1='${mobileY1}' x2='${mobileX2}' y2='${mobileY2}'/></svg><span class='photo-annotation ${alignment}' style='--annotation-x:${labelX}%;--annotation-y:${labelY}%;--annotation-mobile-x:${mobileX}%;--annotation-mobile-y:${mobileY}%;--annotation-mobile-align:${mobileAlignment}'>${escape(record.caption)}</span>`;
+    const desktopFrameRatio = { hero: 2.18, homeEncounter: 4 / 3, project: 5 / 4 }[id]
+      || Number(record.ratio.split(" /")[0]) / Number(record.ratio.split(" /")[1]);
+    const sourceLabel = sourcePoint(labelX, labelY, record, desktopFrameRatio, record.focalPoint);
+    const sourceStart = sourcePoint(x1, y1, record, desktopFrameRatio, record.focalPoint);
+    const sourceEnd = sourcePoint(x2, y2, record, desktopFrameRatio, record.focalPoint);
+    caption = `<svg class='photo-callout' data-photo-annotation data-source-x1='${sourceStart.x}' data-source-y1='${sourceStart.y}' data-source-x2='${sourceEnd.x}' data-source-y2='${sourceEnd.y}' viewBox='0 0 100 100' preserveAspectRatio='none' aria-hidden='true' focusable='false'><line x1='${x1}' y1='${y1}' x2='${x2}' y2='${y2}'/></svg><span class='photo-annotation ${alignment}' data-photo-label data-source-x='${sourceLabel.x}' data-source-y='${sourceLabel.y}' style='--annotation-x:${labelX}%;--annotation-y:${labelY}%'>${escape(record.caption)}</span>`;
   }
   return `<figure class='photo' style='${ratioStyle};--photo-focus:${record.focalPoint};--photo-focus-mobile:${record.focalPointMobile}'><div class='photo-frame'><img src='${escape(record.src)}' alt='${escape(record.alt)}' width='${record.width}' height='${record.height}' ${loading}>${caption}</div><figcaption><span class='image-credit'>${escape(record.credit)}</span></figcaption></figure>`;
 }

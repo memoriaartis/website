@@ -1,4 +1,60 @@
 document.documentElement.classList.add('js');
+
+// Reproject image-anchored annotations whenever object-fit: cover changes crop.
+function initPhotoAnnotations() {
+  for (const svg of document.querySelectorAll('[data-photo-annotation]')) {
+    const frame = svg.closest('.photo-frame');
+    const image = frame?.querySelector('img');
+    const line = svg.querySelector('line');
+    const label = frame?.querySelector('[data-photo-label]');
+    if (!frame || !image || !line || !label) continue;
+
+    const imagePoints = {
+      x1: Number(svg.dataset.sourceX1),
+      y1: Number(svg.dataset.sourceY1),
+      x2: Number(svg.dataset.sourceX2),
+      y2: Number(svg.dataset.sourceY2),
+      labelX: Number(label.dataset.sourceX),
+      labelY: Number(label.dataset.sourceY),
+    };
+
+    function metrics() {
+      if (!image.naturalWidth || !image.naturalHeight) return null;
+      const width = frame.clientWidth;
+      const height = frame.clientHeight;
+      if (!width || !height) return null;
+      const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight);
+      const renderedWidth = image.naturalWidth * scale;
+      const renderedHeight = image.naturalHeight * scale;
+      const positions = getComputedStyle(image).objectPosition.split(/\s+/);
+      const percent = (value) => value?.endsWith('%') ? Number.parseFloat(value) / 100 : 0.5;
+      return {
+        width, height, scale,
+        offsetX: (width - renderedWidth) * percent(positions[0]),
+        offsetY: (height - renderedHeight) * percent(positions[1]),
+      };
+    }
+
+    function update() {
+      const size = metrics();
+      if (!size) return;
+      const toFrameX = (value) => (value / 100 * image.naturalWidth * size.scale + size.offsetX) / size.width * 100;
+      const toFrameY = (value) => (value / 100 * image.naturalHeight * size.scale + size.offsetY) / size.height * 100;
+      line.setAttribute('x1', toFrameX(imagePoints.x1));
+      line.setAttribute('y1', toFrameY(imagePoints.y1));
+      line.setAttribute('x2', toFrameX(imagePoints.x2));
+      line.setAttribute('y2', toFrameY(imagePoints.y2));
+      label.style.left = `${toFrameX(imagePoints.labelX)}%`;
+      label.style.top = `${toFrameY(imagePoints.labelY)}%`;
+    }
+
+    image.addEventListener('load', update);
+    if (image.complete) update();
+    new ResizeObserver(update).observe(frame);
+  }
+}
+initPhotoAnnotations();
+
 const menu = document.querySelector('[data-menu]');
 const toggle = document.querySelector('[data-menu-toggle]');
 function setMenu(open) {
