@@ -6,7 +6,7 @@ title: "Memoria Artis | Préserver les savoir-faire artisanaux"
 description: "Memoria Artis documente et archive les savoir-faire artisanaux dans une base patrimoniale. Sa démarche s’adresse aussi à l’industrie."
 eyebrow: "Association suisse"
 heading: "Préserver les savoir-faire artisanaux"
-intro: "Memoria Artis documente les savoir-faire artisanaux et en préserve la mémoire dans une base patrimoniale. Cette démarche aide à les transmettre et s’adresse aussi à l’industrie."
+intro: "Memoria Artis documente les savoir-faire artisanaux et industriels et en préserve la mémoire dans une base patrimoniale."
 primaryCta:
   label: "Découvrir le projet"
   href: "/fr/le-projet/"

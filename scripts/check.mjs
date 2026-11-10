@@ -14,7 +14,7 @@ const example = JSON.parse(fs.readFileSync(path.join(rootDir, "src/_data/example
 const expectedCopy = {
   home: [
     "Préserver les savoir-faire artisanaux",
-    "Memoria Artis documente les savoir-faire artisanaux et en préserve la mémoire dans une base patrimoniale.",
+    "Memoria Artis documente les savoir-faire artisanaux et industriels et en préserve la mémoire dans une base patrimoniale.",
     "Une base de données patrimoniale",
     "Comprendre ce qui guide le geste",
     "Choisir le savoir-faire",
