@@ -12,6 +12,8 @@ layout: layouts/base.njk
   {{ reasonImage | photo | safe }}
 </section>
 
+<section id='base-patrimoniale' class='section editorial-copy origin'>{{ archive | md | safe }}</section>
+
 <section class='section'>
   <h2>{{ beneficiaries.heading }}</h2>
   <div class='columns beneficiaries'>
@@ -28,8 +30,6 @@ layout: layouts/base.njk
   </div>
   {{ contributionImage | photo | safe }}
 </section>
-
-<section class='section editorial-copy origin'>{{ origin | md | safe }}</section>
 
 <section class='invitation quiet'>
   <h2>{{ invitation.heading }}</h2>

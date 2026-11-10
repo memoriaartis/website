@@ -14,6 +14,14 @@ layout: layouts/base.njk
   {{ heroImage | photo | safe }}
 </section>
 
+<section class='section statement'>
+  <h2>{{ statementHeading }}</h2>
+  <div class='statement-copy'>
+    {{ statement | md | safe }}
+    <a class='text-link' href='{{ statementLink.href }}'>{{ statementLink.label }}</a>
+  </div>
+</section>
+
 <section class='section photo-story image-first {% if not (encounterImage | hasPhoto) %}without-image{% endif %}'>
   <div class='story-copy'>{{ encounter | md | safe }}</div>
   {{ encounterImage | photo | safe }}
@@ -26,11 +34,6 @@ layout: layouts/base.njk
     <article><h3>{{ item.title }}</h3>{{ item.text | md | safe }}</article>
     {% endfor %}
   </div>
-</section>
-
-<section class='section editorial-copy statement'>
-  {{ statement | md | safe }}
-  <a class='text-link' href='{{ statementLink.href }}'>{{ statementLink.label }}</a>
 </section>
 
 <section class='section'>

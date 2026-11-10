@@ -3,44 +3,46 @@ layout: layouts/project.njk
 permalink: /fr/le-projet/
 nav: project
 title: "Le projet | Memoria Artis"
-description: "Memoria Artis préserve les savoir-faire artisanaux et industriels en constituant, avec les personnes de métier, une mémoire qui facilite leur transmission."
+description: "Memoria Artis constitue une base de données patrimoniale qui réunit et préserve les savoir-faire artisanaux et industriels qu’elle documente."
 eyebrow: "Le projet"
 heading: "Une mémoire des savoir-faire"
-intro: "Memoria Artis est une association suisse qui documente et préserve les savoir-faire artisanaux et industriels. Elle construit avec les personnes de métier une mémoire de leurs connaissances et de leur expérience pour en faciliter la transmission."
+intro: "Memoria Artis est une association suisse qui documente et archive les savoir-faire artisanaux et industriels. Elle constitue une base de données patrimoniale pour réunir les connaissances recueillies auprès des personnes de métier et les conserver dans la durée."
 reasonImage: project
 reason: |
-  ## Des savoirs qui vivent dans les pratiques
+  ## Pourquoi archiver les savoir-faire
 
   Les savoir-faire se transmettent par la pratique, l’observation et l’expérience. Une partie de ces connaissances n’est pas écrite. Elle se manifeste dans un geste, un choix, une façon de reconnaître l’état d’une matière ou de corriger une erreur.
 
-  Ce projet concerne les savoir-faire vivants, dans les ateliers indépendants comme dans les manufactures et les entreprises industrielles. Il s’intéresse à la manière dont les personnes travaillent, qu’elles façonnent une matière à la main, règlent une machine ou prennent des décisions sur une chaîne de production.
+  Lorsqu’une personne quitte son métier ou qu’une équipe se renouvelle, une partie de cette expérience peut se perdre. En l’archivant avec les explications de celles et ceux qui la détiennent, l’association préserve les connaissances qui permettent de comprendre comment se pratique un métier et pourquoi certains choix sont faits.
 
-  Quand une personne quitte son métier ou qu’un lieu de travail ferme, une partie de son expérience peut devenir difficile à retrouver. Pour en garder la mémoire, la base de connaissances relie progressivement les documents aux gestes, aux étapes, aux outils, aux matières et aux explications qui éclairent une pratique.
+  L’archive est consacrée aux connaissances humaines qui permettent d’exercer un métier, du travail à la main aux réglages et aux décisions sur une chaîne de production.
+archive: |
+  ## Ce que contient la base patrimoniale
 
-  Le projet porte sur les pratiques et les connaissances humaines. L’histoire générale de l’industrie et l’archivage de l’ensemble des documents d’une entreprise sont hors de son périmètre.
+  La base rassemble en un même endroit les savoir-faire documentés par Memoria Artis. Pour chaque pratique, elle conserve les étapes du travail, les outils et les matières, les connaissances préalables, ainsi que les observations et les décisions expliquées par les personnes de métier.
+
+  Ces informations sont reliées aux sources qui les étayent, qu’il s’agisse d’un passage vidéo, d’une photographie, d’un croquis ou d’un entretien. Conserver ensemble les documents, leur provenance et leur contexte permet de retrouver une information et de comprendre à quelle pratique elle se rapporte, même des années plus tard.
 beneficiaries:
-  heading: "À quoi cette mémoire peut servir"
+  heading: "À quoi sert cette archive"
   items:
     - title: "Les ateliers et les entreprises"
-      text: "La documentation peut aider à conserver la mémoire d’une technique ou à préparer le passage de relais au sein d’une équipe."
+      text: "Conserver la mémoire d’une technique et préparer le passage de relais au sein d’une équipe."
     - title: "Les personnes qui apprennent un métier"
-      text: "Les documents peuvent aider à retrouver les explications derrière un geste ou une décision. Ils complètent l’apprentissage par la pratique et auprès des personnes de métier."
+      text: "Retrouver les explications derrière un geste ou une décision pour compléter l’apprentissage par la pratique et auprès des personnes de métier."
     - title: "Les acteurs de la transmission"
-      text: "Les écoles professionnelles, les musées et les institutions patrimoniales pourraient s’appuyer sur cette mémoire pour faire comprendre un métier ou une technique. Les usages dépendront des projets et des conditions convenues avec les personnes concernées."
+      text: "Donner aux écoles professionnelles, aux musées et aux institutions patrimoniales des sources pour expliquer un métier, ses techniques et leur contexte."
 contributionImage: projectExchange
 contribution: |
   ## Documenter avec les personnes de métier
 
-  Une visite fait découvrir un lieu, les personnes qui y travaillent et leur métier. Une documentation approfondie recueille et structure les connaissances nécessaires à la préservation d’un savoir-faire. Une même rencontre peut contribuer aux deux activités. Le film d’une visite peut servir de source, mais il ne suffit pas à constituer une archive de savoir-faire.
+  Une fois le savoir-faire choisi, l’association le documente avec les personnes qui le pratiquent. Elles expliquent ce qu’elles font, ce qu’elles observent et ce qui guide leurs décisions. Ces explications accompagnent les documents dans l’archive pour que la pratique reste compréhensible dans la durée.
 
-  Les personnes de métier participent au choix du savoir-faire à documenter et du contexte à conserver. Les conditions de participation, de conservation, d’accès et de partage sont définies avec les personnes concernées pour chaque projet.
+  L’association convient avec les personnes concernées des conditions de participation, de conservation, d’accès et de partage pour chaque projet.
+
+  Une visite filmée peut servir de première rencontre. Elle permet de découvrir le métier sur place et de repérer avec les personnes qui l’exercent ce qui mérite d’être documenté.
 contributionLink:
   label: "Proposer une contribution"
   href: "/fr/contact/"
-origin: |
-  ## Une association suisse
-
-  Memoria Artis part d’une conviction : pour préserver un savoir-faire, il faut comprendre comment il se pratique, dans quelles conditions et avec quelles connaissances. Les rencontres sur le terrain donnent à cette mémoire son point de départ.
 invitation:
   heading: "Vous souhaitez contribuer au projet ?"
   text: "Présentez-nous votre métier, votre lieu de travail ou la contribution que vous imaginez."

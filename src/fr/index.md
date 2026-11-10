@@ -3,10 +3,10 @@ layout: layouts/home.njk
 permalink: /fr/
 nav: home
 title: "Memoria Artis | Préserver les savoir-faire artisanaux et industriels"
-description: "Association suisse, Memoria Artis documente les savoir-faire artisanaux et industriels et constitue une mémoire durable pour faciliter leur transmission."
+description: "Memoria Artis documente les savoir-faire artisanaux et industriels et les archive dans une base de données patrimoniale pour les préserver dans la durée."
 eyebrow: "Association suisse"
 heading: "Préserver les savoir-faire"
-intro: "Memoria Artis documente et préserve les savoir-faire artisanaux et industriels. Avec les personnes qui les maîtrisent, l’association recueille et organise leurs connaissances pour constituer une mémoire durable et faciliter leur transmission."
+intro: "Memoria Artis documente les savoir-faire artisanaux et industriels et les archive dans une base de données patrimoniale. L’association rassemble les connaissances des personnes de métier en un même endroit pour les préserver dans la durée et faciliter leur transmission."
 primaryCta:
   label: "Découvrir le projet"
   href: "/fr/le-projet/"
@@ -16,36 +16,31 @@ secondaryCta:
 heroImage: hero
 encounterImage: homeEncounter
 encounter: |
-  ## Tout commence par une rencontre
+  ## Comprendre ce qui guide le geste
 
-  Un même savoir-faire peut se pratiquer dans un atelier indépendant, une manufacture ou une entreprise industrielle. Il se manifeste dans un geste, dans la façon de régler une machine ou dans une décision prise à partir d’une observation.
-
-  Les visites font découvrir des lieux de travail, des personnes et leurs pratiques. Elles peuvent aussi faire émerger un savoir-faire à documenter plus en profondeur avec celles et ceux qui le maîtrisent.
+  Quand une pièce résiste ou qu’une machine réagit autrement que prévu, l’expérience aide à reconnaître ce qui se passe et à décider quoi faire. Memoria Artis recueille ces explications auprès des personnes de métier, dans les ateliers comme sur les sites de production.
 activities:
-  heading: "De la rencontre aux connaissances structurées"
+  heading: "Du terrain à l’archive"
   items:
-    - title: "Rencontrer et inventorier"
-      text: "Découvrir les métiers et leurs conditions de travail, puis choisir avec les personnes concernées les savoir-faire à documenter."
+    - title: "Choisir le savoir-faire"
+      text: "Définir avec les personnes de métier la pratique à documenter et les connaissances à conserver."
     - title: "Documenter"
       text: "Recueillir les gestes, les méthodes et les explications par la vidéo, la photographie, le son, l’entretien ou la description, selon le projet."
-    - title: "Structurer et préserver"
-      text: "Relier les documents aux étapes, aux outils, aux matières et aux décisions qui éclairent la pratique, et conserver leurs sources."
+    - title: "Archiver dans la base"
+      text: "Classer les documents par savoir-faire, les relier aux étapes qu’ils éclairent et conserver leurs sources."
+statementHeading: "Une base de données patrimoniale"
 statement: |
-  ## Une mémoire qui aide à transmettre
-
-  Que faut-il déjà savoir pour comprendre un geste ? À quels signes reconnaît-on qu’une pièce est prête ou qu’un réglage doit être repris ?
-
-  Cette mémoire prend progressivement la forme d’une base de connaissances structurée. Elle relie ce qui se fait aux explications des personnes de métier et aux documents qui en gardent la trace. La transmission guide dès le départ le choix des connaissances à recueillir.
+  Pour chaque savoir-faire documenté, la base réunit les sources et les explications qui permettent de comprendre la pratique. On y conserve, par exemple, la vidéo d’un réglage avec l’étape où il intervient, les signes qui indiquent qu’il faut l’ajuster et les raisons du choix de la personne de métier.
 statementLink:
-  label: "Découvrir notre démarche"
-  href: "/fr/notre-demarche/"
+  label: "Découvrir ce que contient la base"
+  href: "/fr/le-projet/#base-patrimoniale"
 stages:
-  heading: "De la documentation au partage"
+  heading: "Conserver et transmettre"
   items:
-    - title: "Une base en construction"
-      text: "La base se constitue au fil des projets de documentation. Elle rassemble les documents et les explications recueillis avec les personnes de métier."
-    - title: "Un accès à organiser"
-      text: "À terme, les connaissances recueillies pourront être consultées et partagées pour faciliter leur transmission. Les publics, les conditions d’accès et la forme de la future plateforme restent à définir."
+    - title: "Préserver dans la durée"
+      text: "Garder des connaissances accessibles au fil des générations, même quand un atelier ferme, qu’une équipe change ou qu’une technique cesse d’être pratiquée."
+    - title: "Aider à transmettre"
+      text: "Donner aux personnes qui enseignent ou apprennent un métier de quoi retrouver un geste et comprendre les choix qui l’accompagnent. Le partage respecte les conditions convenues avec les personnes qui ont contribué."
 invitation:
   heading: "Un savoir-faire à documenter ?"
   text: "Que vous exerciez un métier, représentiez un atelier ou une entreprise, ou souhaitiez contribuer au projet, parlons de votre proposition."
