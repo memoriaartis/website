@@ -123,7 +123,7 @@ for (const [id, permalink] of Object.entries(routes)) {
 }
 
 const homeHtml = fs.readFileSync(path.join(siteDir, "fr/index.html"), "utf8");
-assert((homeHtml.match(/<article>/g) || []).length === 5, "Home must have three activities and two stages.");
+assert((homeHtml.match(/<article>/g) || []).length === 7, "Home must have three activities and four competencies.");
 
 const approach = fs.readFileSync(path.join(siteDir, "fr/notre-demarche/index.html"), "utf8");
 const method = approach.match(/<ol class='steps'>([\s\S]*?)<\/ol>/)?.[1] || "";
