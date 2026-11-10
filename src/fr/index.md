@@ -2,11 +2,11 @@
 layout: layouts/home.njk
 permalink: /fr/
 nav: home
-title: "Memoria Artis | Préserver les savoir-faire artisanaux et industriels"
-description: "Memoria Artis documente les savoir-faire artisanaux et industriels et les archive dans une base de données patrimoniale pour les préserver dans la durée."
+title: "Memoria Artis | Préserver les savoir-faire artisanaux"
+description: "Memoria Artis documente et archive les savoir-faire artisanaux dans une base patrimoniale. Sa démarche s’adresse aussi à l’industrie."
 eyebrow: "Association suisse"
-heading: "Préserver les savoir-faire"
-intro: "Memoria Artis documente les savoir-faire artisanaux et industriels et les archive dans une base de données patrimoniale. L’association rassemble les connaissances des personnes de métier en un même endroit pour les préserver dans la durée et faciliter leur transmission."
+heading: "Préserver les savoir-faire artisanaux"
+intro: "Memoria Artis documente les savoir-faire artisanaux et en préserve la mémoire dans une base patrimoniale. Cette démarche aide à les transmettre et s’adresse aussi à l’industrie."
 primaryCta:
   label: "Découvrir le projet"
   href: "/fr/le-projet/"
@@ -18,7 +18,7 @@ encounterImage: homeEncounter
 encounter: |
   ## Comprendre ce qui guide le geste
 
-  Quand une pièce résiste ou qu’une machine réagit autrement que prévu, l’expérience aide à reconnaître ce qui se passe et à décider quoi faire. Memoria Artis recueille ces explications auprès des personnes de métier, dans les ateliers comme sur les sites de production.
+  Quand une matière résiste ou qu’un geste doit être ajusté, l’expérience aide à reconnaître ce qui se passe et à décider quoi faire. Memoria Artis recueille ces explications auprès des personnes de métier, dans les ateliers comme dans les manufactures.
 activities:
   heading: "Du terrain à l’archive"
   items:
@@ -34,13 +34,13 @@ statement: |
 statementLink:
   label: "Découvrir ce que contient la base"
   href: "/fr/le-projet/#base-patrimoniale"
-stages:
-  heading: "Conserver et transmettre"
+audiences:
+  heading: "À qui s’adresse Memoria Artis ?"
   items:
-    - title: "Préserver dans la durée"
-      text: "Garder des connaissances accessibles au fil des générations, même quand un atelier ferme, qu’une équipe change ou qu’une technique cesse d’être pratiquée."
-    - title: "Aider à transmettre"
-      text: "Donner aux personnes qui enseignent ou apprennent un métier de quoi retrouver un geste et comprendre les choix qui l’accompagnent. Le partage respecte les conditions convenues avec les personnes qui ont contribué."
+    - title: "Aux artisans et aux ateliers"
+      text: "Pour garder la mémoire d’une technique, de ses variantes et des choix acquis par l’expérience, et préparer sa transmission à celles et ceux qui apprennent le métier."
+    - title: "À l’industrie"
+      text: "Pour conserver avec les équipes les réglages, les observations et les décisions qui font partie d’un savoir-faire, notamment lors d’un passage de relais."
 invitation:
   heading: "Un savoir-faire à documenter ?"
   text: "Que vous exerciez un métier, représentiez un atelier ou une entreprise, ou souhaitiez contribuer au projet, parlons de votre proposition."

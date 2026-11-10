@@ -13,23 +13,25 @@ const example = JSON.parse(fs.readFileSync(path.join(rootDir, "src/_data/example
 
 const expectedCopy = {
   home: [
-    "Préserver les savoir-faire",
-    "Memoria Artis documente les savoir-faire artisanaux et industriels et les archive dans une base de données patrimoniale.",
+    "Préserver les savoir-faire artisanaux",
+    "Memoria Artis documente les savoir-faire artisanaux et en préserve la mémoire dans une base patrimoniale.",
     "Une base de données patrimoniale",
     "Comprendre ce qui guide le geste",
     "Choisir le savoir-faire",
     "Documenter",
     "Archiver dans la base",
-    "Préserver dans la durée",
-    "Aider à transmettre",
+    "À qui s’adresse Memoria Artis ?",
+    "Aux artisans et aux ateliers",
+    "À l’industrie",
     "Parlons-en",
   ],
   project: [
     "Une mémoire des savoir-faire",
-    "Les ateliers et les entreprises",
-    "Les personnes qui apprennent un métier",
-    "Les acteurs de la transmission",
+    "Les artisans et leurs ateliers",
+    "L’industrie",
+    "Les personnes qui transmettent et apprennent",
     "Ce que contient la base patrimoniale",
+    "Comment les projets sont financés",
     "Contacter Memoria Artis",
   ],
   approach: [
@@ -43,7 +45,8 @@ const expectedCopy = {
   ],
   contact: [
     "Partons de votre proposition",
-    "Artisans, ateliers et entreprises",
+    "Artisans et ateliers",
+    "Industrie",
     "Écoles, institutions et partenaires",
     "Soutenir l’association",
   ],

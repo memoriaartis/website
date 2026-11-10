@@ -37,9 +37,9 @@ layout: layouts/base.njk
 </section>
 
 <section class='section'>
-  <h2>{{ stages.heading }}</h2>
+  <h2>{{ audiences.heading }}</h2>
   <div class='columns two-columns development'>
-    {% for item in stages.items %}
+    {% for item in audiences.items %}
     <article><h3>{{ item.title }}</h3>{{ item.text | md | safe }}</article>
     {% endfor %}
   </div>
