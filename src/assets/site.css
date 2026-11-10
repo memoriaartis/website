@@ -276,8 +276,17 @@ h2 { line-height: .98; letter-spacing: -.025em; }
   background: linear-gradient(90deg, rgb(12 12 11 / 76%) 0%, rgb(12 12 11 / 38%) 48%, rgb(12 12 11 / 8%) 100%), linear-gradient(0deg, rgb(12 12 11 / 43%), transparent 52%);
   pointer-events: none;
 }
-.hero .photo { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; }
-.hero .photo-frame { position: absolute; inset: 0; aspect-ratio: auto; }
+.hero .photo { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; container-type: size; }
+/* Keep the camera and basket in frame on wide screens, and the face above the crop. */
+.hero .photo-frame {
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: min(100%, 136cqh);
+  height: min(100%, 88vw);
+  aspect-ratio: auto;
+  mask-image: linear-gradient(to right, transparent, #000 26%), linear-gradient(#000 84%, transparent);
+  mask-composite: intersect;
+}
 .hero .photo img { object-fit: cover; object-position: var(--photo-focus, 50% 48%); }
 .hero .photo figcaption { position: absolute; right: 5vw; bottom: 23px; z-index: 1; padding: 0; color: rgb(255 255 255 / 76%); font: 12px/1.4 Arial, sans-serif; }
 .hero .image-credit { color: inherit; }
@@ -385,10 +394,12 @@ input, select, textarea { border-color: #918b80; background: #f8f5ef; }
   .header-overlay .navigation { position: absolute; top: 76px; left: 0; right: 0; width: 100%; padding: 12px 20px 20px; background: #171714; color: var(--paper); }
   .header-overlay .navigation a { border-color: #4a4944; }
   .hero { min-height: 88svh; padding: 150px 22px 72px; }
-  .hero::after { background: linear-gradient(0deg, rgb(12 12 11 / 82%), rgb(12 12 11 / 18%) 88%); }
+  .hero:not(.without-image) { padding-top: max(235px, 76vw); }
+  .hero::after { background: linear-gradient(180deg, rgb(12 12 11 / 60%), transparent 160px); }
   .hero-copy { width: 100%; }
   .hero h1 { max-width: 9ch; font-size: clamp(48px, 13vw, 74px); }
   .hero .intro { max-width: 42ch; font-size: 16px; }
+  .hero .photo-frame { width: 100%; mask-image: linear-gradient(#000 84%, transparent); }
   .hero .photo img { object-position: var(--photo-focus-mobile, 50% 45%); }
   .hero .photo figcaption { right: 20px; bottom: 15px; font-size: 10px; }
   .photo-annotation { max-width: min(150px, 40%); }

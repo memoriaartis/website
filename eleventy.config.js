@@ -91,7 +91,7 @@ function renderPhoto(id, images, ui, { production, omitMissingImages }) {
     const x2 = coordinate(desktop.line?.x2, "line.x2");
     const y2 = coordinate(desktop.line?.y2, "line.y2");
     const alignment = desktop.label?.align === "left" ? "align-left" : "align-right";
-    const desktopFrameRatio = { hero: 2.18, homeEncounter: 4 / 3, project: 5 / 4 }[id]
+    const desktopFrameRatio = { homeEncounter: 4 / 3, project: 5 / 4 }[id]
       || Number(record.ratio.split(" /")[0]) / Number(record.ratio.split(" /")[1]);
     const sourceLabel = sourcePoint(labelX, labelY, record, desktopFrameRatio, record.focalPoint);
     const sourceStart = sourcePoint(x1, y1, record, desktopFrameRatio, record.focalPoint);
