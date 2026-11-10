@@ -5,7 +5,7 @@ nav: home
 title: "Memoria Artis | Préserver les savoir-faire artisanaux"
 description: "Memoria Artis documente et archive les savoir-faire artisanaux dans une base patrimoniale. Sa démarche s’adresse aussi à l’industrie."
 eyebrow: "Association suisse"
-heading: "Préserver les savoir-faire artisanaux"
+heading: "Préserver les savoir-faire"
 intro: "Memoria Artis documente les savoir-faire artisanaux et industriels et en préserve la mémoire dans une base patrimoniale."
 primaryCta:
   label: "Découvrir le projet"
@@ -34,13 +34,17 @@ statement: |
 statementLink:
   label: "Découvrir ce que contient la base"
   href: "/fr/le-projet/#base-patrimoniale"
-audiences:
-  heading: "À qui s’adresse Memoria Artis ?"
+offers:
+  heading: "Nos compétences"
   items:
-    - title: "Aux artisans et aux ateliers"
-      text: "Pour garder la mémoire d’une technique, de ses variantes et des choix acquis par l’expérience, et préparer sa transmission à celles et ceux qui apprennent le métier."
-    - title: "À l’industrie"
-      text: "Pour conserver avec les équipes les réglages, les observations et les décisions qui font partie d’un savoir-faire, notamment lors d’un passage de relais."
+    - title: "Filmer des visites d’ateliers"
+      text: "Montrer le métier et le travail de l’artisan, lui donner de la visibilité et repérer avec lui les savoir-faire à documenter."
+    - title: "Documenter et archiver"
+      text: "Recueillir les gestes, les méthodes, les réglages et les explications des savoir-faire artisanaux et industriels, puis les organiser dans la base patrimoniale."
+    - title: "Documenter les savoir-faire en entreprise"
+      text: "Adapter la démarche aux besoins internes d’une entreprise pour préserver les connaissances de ses équipes et préparer leur transmission."
+    - title: "Structurer des ressources pour transmettre"
+      text: "Organiser les connaissances dans la base patrimoniale afin que les écoles, les musées et les institutions puissent s’appuyer sur des ressources structurées pour faire comprendre un métier."
 invitation:
   heading: "Un savoir-faire à documenter ?"
   text: "Que vous exerciez un métier, représentiez un atelier ou une entreprise, ou souhaitiez contribuer au projet, parlons de votre proposition."
