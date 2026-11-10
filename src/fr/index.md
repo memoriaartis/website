@@ -2,11 +2,11 @@
 layout: layouts/home.njk
 permalink: /fr/
 nav: home
-title: "Memoria Artis | Documenter et sauvegarder les savoir-faire artisanaux"
-description: "Memoria Artis va à la rencontre des artisans pour documenter et sauvegarder leurs savoir-faire, les organiser dans une base de connaissances et préparer leur transmission."
-eyebrow: "Association suisse · Savoir-faire artisanaux"
-heading: "Documenter et sauvegarder les savoir-faire artisanaux"
-intro: "Memoria Artis va à la rencontre des artisans pour comprendre leurs pratiques, identifier avec eux les savoir-faire à documenter et constituer une base de connaissances organisée. Cette base vise à préserver les savoirs recueillis et à préparer leur transmission."
+title: "Memoria Artis | Préserver les savoir-faire artisanaux et industriels"
+description: "Association suisse, Memoria Artis documente les savoir-faire artisanaux et industriels et constitue une mémoire durable pour faciliter leur transmission."
+eyebrow: "Association suisse"
+heading: "Préserver les savoir-faire"
+intro: "Memoria Artis documente et préserve les savoir-faire artisanaux et industriels. Avec les personnes qui les maîtrisent, l’association recueille et organise leurs connaissances pour constituer une mémoire durable et faciliter leur transmission."
 primaryCta:
   label: "Découvrir le projet"
   href: "/fr/le-projet/"
@@ -18,37 +18,37 @@ encounterImage: homeEncounter
 encounter: |
   ## Tout commence par une rencontre
 
-  Les savoir-faire artisanaux vivent dans les personnes qui les pratiquent et dans les ateliers où ils s’exercent. Ils se transmettent par la pratique, l’observation et l’expérience. Une partie de ce savoir se manifeste dans un geste, un choix ou une façon de reconnaître l’état d’une matière.
+  Un même savoir-faire peut se pratiquer dans un atelier indépendant, une manufacture ou une entreprise industrielle. Il se manifeste dans un geste, dans la façon de régler une machine ou dans une décision prise à partir d’une observation.
 
-  Nous allons à la rencontre des artisans pour découvrir leur métier, leur environnement et leurs pratiques. Leurs explications et le contexte de leur travail donnent sens à ce que nous recueillons.
+  Les visites font découvrir des lieux de travail, des personnes et leurs pratiques. Elles peuvent aussi faire émerger un savoir-faire à documenter plus en profondeur avec celles et ceux qui le maîtrisent.
 activities:
   heading: "De la rencontre aux connaissances structurées"
   items:
     - title: "Rencontrer et inventorier"
-      text: "Découvrir les ateliers et les pratiques, puis identifier avec les artisans les savoir-faire qui méritent une documentation approfondie."
+      text: "Découvrir les métiers et leurs conditions de travail, puis choisir avec les personnes concernées les savoir-faire à documenter."
     - title: "Documenter"
-      text: "Recueillir les gestes et les explications par la vidéo, la photographie, le son, l’entretien et des descriptions, selon les besoins du projet."
+      text: "Recueillir les gestes, les méthodes et les explications par la vidéo, la photographie, le son, l’entretien ou la description, selon le projet."
     - title: "Structurer et préserver"
-      text: "Organiser les connaissances et les documents, les relier aux étapes, aux outils, aux matières et à leur contexte, tout en gardant le lien avec leurs sources."
+      text: "Relier les documents aux étapes, aux outils, aux matières et aux décisions qui éclairent la pratique, et conserver leurs sources."
 statement: |
-  ## Documenter pour préserver et préparer la transmission
+  ## Une mémoire qui aide à transmettre
 
-  Filmer un geste ne suffit pas toujours à comprendre une pratique. Que faut-il déjà savoir ? Qu’observe l’artisan ? Pourquoi choisit-il cette manière de faire et comment corrige-t-il une erreur ?
+  Que faut-il déjà savoir pour comprendre un geste ? À quels signes reconnaît-on qu’une pièce est prête ou qu’un réglage doit être repris ?
 
-  La transmission guide le travail de documentation dès le départ. En recueillant ces explications avec les artisans et en les reliant aux documents correspondants, nous préparons des connaissances qui pourront servir à comprendre et à apprendre.
+  Cette mémoire prend progressivement la forme d’une base de connaissances structurée. Elle relie ce qui se fait aux explications des personnes de métier et aux documents qui en gardent la trace. La transmission guide dès le départ le choix des connaissances à recueillir.
 statementLink:
   label: "Découvrir notre démarche"
   href: "/fr/notre-demarche/"
 stages:
-  heading: "La base d’abord. Le partage ensuite."
+  heading: "De la documentation au partage"
   items:
-    - title: "01. Documenter et constituer la base"
-      text: "Rencontrer les artisans, identifier les savoir-faire à documenter, recueillir les connaissances et développer progressivement une base organisée."
-    - title: "02. Préparer les usages futurs"
-      text: "Dans un second temps, des moyens de consultation et de partage pourront faciliter la transmission. Les outils, les conditions d’accès et les publics restent à définir."
+    - title: "Une base en construction"
+      text: "La base se constitue au fil des projets de documentation. Elle rassemble les documents et les explications recueillis avec les personnes de métier."
+    - title: "Un accès à organiser"
+      text: "À terme, les connaissances recueillies pourront être consultées et partagées pour faciliter leur transmission. Les publics, les conditions d’accès et la forme de la future plateforme restent à définir."
 invitation:
-  heading: "Un atelier, un savoir-faire, une rencontre à proposer ?"
-  text: "Les projets se construisent avec les artisans et les personnes qui souhaitent contribuer à cette mission."
+  heading: "Un savoir-faire à documenter ?"
+  text: "Que vous exerciez un métier, représentiez un atelier ou une entreprise, ou souhaitiez contribuer au projet, parlons de votre proposition."
   cta:
     label: "Parlons-en"
     href: "/fr/contact/"

@@ -1,11 +1,11 @@
 {
   "label": "Exemple illustratif",
-  "title": "Retrouver les raisons d’un geste",
+  "title": "Retrouver les raisons d’un réglage",
   "nodes": [
-    {"label":"Une étape de travail", "text":"L’artisan ajuste son geste pendant une opération."},
-    {"label":"Un prérequis", "text":"Comprendre l’étape précédente et reconnaître l’état de la matière."},
-    {"label":"Une observation, un choix", "text":"L’artisan explique ce qu’il perçoit et pourquoi il corrige son mouvement."},
-    {"label":"Une source à consulter", "text":"Le passage vidéo et l’explication correspondante sont reliés à cette étape."}
+    {"label":"Une étape de travail", "text":"Une personne contrôle une pièce à la sortie de la machine."},
+    {"label":"Un prérequis", "text":"Savoir où mesurer la pièce et connaître la mesure attendue."},
+    {"label":"Une observation, un choix", "text":"La personne constate un écart et explique pourquoi elle reprend le réglage."},
+    {"label":"Une source à consulter", "text":"Un passage filmé et une explication recueillie en entretien sont reliés à cette étape."}
   ],
   "closing": "Ces liens permettent de retrouver à la fois ce qui a été fait, ce qu’il fallait déjà comprendre et les raisons de la décision."
 }

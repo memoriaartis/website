@@ -8,7 +8,7 @@
     "skip":  "Aller au contenu",
     "menu":  "Menu",
     "closeMenu":  "Fermer le menu",
-    "footerDescription":  "Association suisse pour la préservation et la transmission des savoir-faire artisanaux.",
+    "footerDescription":  "Association suisse pour la préservation et la transmission des savoir-faire artisanaux et industriels.",
     "preview":  "Version de travail : le contact n’est pas encore configuré. Aucun message ne peut être envoyé depuis cette prévisualisation.",
     "legalPreview":  "Version de travail : les informations de publication doivent être confirmées avant la mise en ligne.",
     "privacyPreview":  "Version de travail : cette notice sera complétée avec les informations vérifiées sur l’éditeur, l’hébergement, les prestataires et la conservation des données avant la mise en ligne.",
@@ -24,7 +24,7 @@
     "form":  {
                  "name":  "Nom",
                  "email":  "Adresse e-mail",
-                 "organisation":  "Atelier ou organisation",
+                 "organisation":  "Atelier, entreprise ou organisation",
                  "optional":  "facultatif",
                  "subject":  "Votre demande",
                  "message":  "Votre message",
@@ -35,7 +35,7 @@
                                   "soutien":  "Soutenir le projet",
                                   "autre":  "Autre demande"
                               },
-                 "helper":  "Présentez-nous votre atelier, votre proposition ou la manière dont vous souhaitez participer.",
+                 "helper":  "Présentez-nous votre pratique, votre lieu de travail ou la contribution que vous imaginez.",
                  "privacy":  "Les informations transmises servent à traiter votre demande et à vous répondre. Pour en savoir plus, consultez notre page",
                  "submit":  "Envoyer le message",
                  "sending":  "Envoi en cours…",

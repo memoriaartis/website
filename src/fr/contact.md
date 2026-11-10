@@ -3,15 +3,15 @@ layout: layouts/contact.njk
 permalink: /fr/contact/
 nav: contact
 title: "Contact | Memoria Artis"
-description: "Proposez un atelier, un savoir-faire à documenter, un partenariat ou un soutien aux premiers projets de l’association Memoria Artis."
+description: "Proposez un savoir-faire artisanal ou industriel à documenter, une rencontre, un partenariat ou un soutien à Memoria Artis."
 eyebrow: "Contact"
 heading: "Partons de votre proposition"
-intro: "Un atelier à découvrir, une pratique à documenter, une collaboration ou un soutien : dites-nous ce que vous souhaitez partager avec Memoria Artis."
+intro: "Vous souhaitez faire découvrir un lieu de travail, proposer un savoir-faire à documenter ou contribuer à l’association ? Parlons de ce que vous avez en tête."
 entries:
-  - title: "Artisans et ateliers"
-    text: "Votre métier, ce qui vous semble important à préserver et les conditions dans lesquelles vous aimeriez le partager."
+  - title: "Artisans, ateliers et entreprises"
+    text: "Vous exercez un métier ou représentez un atelier, une manufacture ou une entreprise industrielle. Parlez-nous de votre pratique, de ce que vous souhaitez préserver et des conditions dans lesquelles vous aimeriez en discuter."
   - title: "Écoles, institutions et partenaires"
-    text: "Une piste de documentation, un besoin de transmission ou un projet à imaginer ensemble."
+    text: "Écoles professionnelles, musées et institutions patrimoniales peuvent proposer une piste de documentation, un besoin de transmission ou une collaboration à imaginer ensemble."
   - title: "Soutenir l’association"
     text: "Du temps, des compétences, du matériel ou un soutien financier pour faire avancer les premiers projets."
 ---
