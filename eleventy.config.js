@@ -91,11 +91,13 @@ function renderPhoto(id, images, ui, { production, omitMissingImages }) {
     const x2 = coordinate(desktop.line?.x2, "line.x2");
     const y2 = coordinate(desktop.line?.y2, "line.y2");
     const alignment = desktop.label?.align === "left" ? "align-left" : "align-right";
+    const referenceRatio = desktop.ratio || record.ratio;
+    const referenceFocus = desktop.focalPoint || record.focalPoint;
     const desktopFrameRatio = { homeEncounter: 4 / 3, project: 5 / 4 }[id]
-      || Number(record.ratio.split(" /")[0]) / Number(record.ratio.split(" /")[1]);
-    const sourceLabel = sourcePoint(labelX, labelY, record, desktopFrameRatio, record.focalPoint);
-    const sourceStart = sourcePoint(x1, y1, record, desktopFrameRatio, record.focalPoint);
-    const sourceEnd = sourcePoint(x2, y2, record, desktopFrameRatio, record.focalPoint);
+      || Number(referenceRatio.split(" /")[0]) / Number(referenceRatio.split(" /")[1]);
+    const sourceLabel = sourcePoint(labelX, labelY, record, desktopFrameRatio, referenceFocus);
+    const sourceStart = sourcePoint(x1, y1, record, desktopFrameRatio, referenceFocus);
+    const sourceEnd = sourcePoint(x2, y2, record, desktopFrameRatio, referenceFocus);
     caption = `<svg class='photo-callout' data-photo-annotation data-source-x1='${sourceStart.x}' data-source-y1='${sourceStart.y}' data-source-x2='${sourceEnd.x}' data-source-y2='${sourceEnd.y}' viewBox='0 0 100 100' preserveAspectRatio='none' aria-hidden='true' focusable='false'><line x1='${x1}' y1='${y1}' x2='${x2}' y2='${y2}'/></svg><span class='photo-annotation ${alignment}' data-photo-label data-source-x='${sourceLabel.x}' data-source-y='${sourceLabel.y}' style='--annotation-x:${labelX}%;--annotation-y:${labelY}%'>${escape(record.caption)}</span>`;
   }
   return `<figure class='photo' style='${ratioStyle};--photo-focus:${record.focalPoint};--photo-focus-mobile:${record.focalPointMobile}'><div class='photo-frame'><img src='${escape(record.src)}' alt='${escape(record.alt)}' width='${record.width}' height='${record.height}' ${loading}>${caption}</div><figcaption><span class='image-credit'>${escape(record.credit)}</span></figcaption></figure>`;

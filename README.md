@@ -32,6 +32,12 @@ npm run check
 
 Layouts live in `src/_includes/layouts/`. `src/assets/site.css` controls appearance; `src/assets/site.js` controls the menu, preview validation and subject preselection. Content remains readable and navigation remains available without JavaScript.
 
+## Typography
+
+Headings and the wordmark use Newsreader Regular. Body text and navigation use Manrope Regular, Medium and Semibold. The Latin WOFF2 subsets include French accents and are served locally from `src/assets/fonts/`; visitors make no requests to a font service. Both families use the SIL Open Font License, included alongside the font files. Fontsource packages are pinned to version 5.2.8 for these assets.
+
+The homepage pairs text with an unobscured workshop photograph. Factual annotations and leader lines appear on the photographs and remain anchored to the same image details as the crop changes with screen size. Credits appear beneath the images; crop positions are controlled by the image records below.
+
 ## Replace image areas
 
 The seven photo slots have a defined editorial role and proportions. In a working preview, they show a short brief on a stone surface. In a production build, missing images disappear and the layout becomes a clean text composition, with no empty frames or provisional captions. The planning descriptions never become alt text or captions. See `PHOTOGRAPHIES.md` for the complete list.

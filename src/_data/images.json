@@ -6,14 +6,27 @@
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : PJ Wallace",
     "caption": "Geste de vannerie filmé en atelier",
-    "annotation": { "label": { "x": 88, "y": 61 }, "line": { "x1": 73, "y1": 67, "x2": 65, "y2": 71 } },
     "alt": "Deux caméras filment les mains d’un vannier et un panier posé sur l’établi.",
     "width": 2400,
     "height": 4261,
-    "focalPoint": "50% 33%",
-    "focalPointMobile": "50% 37%",
-    "ratio": "34 / 25",
-    "ratioMobile": "4 / 3"
+    "focalPoint": "50% 58%",
+    "focalPointMobile": "50% 57%",
+    "ratio": "1 / 1",
+    "ratioMobile": "5 / 4",
+    "annotation": {
+      "label": {
+        "x": 88,
+        "y": 61
+      },
+      "line": {
+        "x1": 73,
+        "y1": 67,
+        "x2": 65,
+        "y2": 71
+      },
+      "ratio": "34 / 25",
+      "focalPoint": "50% 33%"
+    }
   },
   "project": {
     "brief": "Un atelier habité : la personne, son environnement et les traces du travail en cours.",
@@ -22,15 +35,37 @@
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Mario La Pergola",
     "caption": "Un luthier au travail à l’établi",
-    "annotation": { "label": { "x": 96, "y": 18 }, "line": { "x1": 85, "y1": 23, "x2": 72, "y2": 43 } },
-    "annotationMobile": { "label": { "x": 94, "y": 20 }, "line": { "x1": 77, "y1": 28, "x2": 72, "y2": 43 } },
     "alt": "Un luthier travaille dans un atelier rempli d’instruments et d’outils.",
     "width": 2400,
     "height": 1600,
     "focalPoint": "58% 53%",
     "focalPointMobile": "58% 50%",
     "ratio": "5 / 4",
-    "ratioMobile": "4 / 3"
+    "ratioMobile": "4 / 3",
+    "annotation": {
+      "label": {
+        "x": 96,
+        "y": 18
+      },
+      "line": {
+        "x1": 85,
+        "y1": 23,
+        "x2": 72,
+        "y2": 43
+      }
+    },
+    "annotationMobile": {
+      "label": {
+        "x": 94,
+        "y": 20
+      },
+      "line": {
+        "x1": 77,
+        "y1": 28,
+        "x2": 72,
+        "y2": 43
+      }
+    }
   },
   "projectExchange": {
     "brief": "Un échange dans un atelier, autour d’un outil, d’une matière ou d’un objet.",
@@ -39,15 +74,39 @@
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Marshall Public Library",
     "caption": "Transmission d’un geste de cordonnerie",
-    "annotation": { "label": { "x": 9, "y": 38, "align": "left" }, "line": { "x1": 23, "y1": 44, "x2": 45, "y2": 60 } },
-    "annotationMobile": { "label": { "x": 5, "y": 28, "align": "left" }, "line": { "x1": 31, "y1": 37, "x2": 43, "y2": 52 } },
     "alt": "Dans un atelier de cordonnerie, un artisan montre un soulier à une personne plus jeune.",
     "width": 2400,
     "height": 1946,
     "focalPoint": "50% 48%",
     "focalPointMobile": "50% 48%",
     "ratio": "4 / 3",
-    "ratioMobile": "4 / 3"
+    "ratioMobile": "4 / 3",
+    "annotation": {
+      "label": {
+        "x": 9,
+        "y": 38,
+        "align": "left"
+      },
+      "line": {
+        "x1": 23,
+        "y1": 44,
+        "x2": 45,
+        "y2": 60
+      }
+    },
+    "annotationMobile": {
+      "label": {
+        "x": 5,
+        "y": 28,
+        "align": "left"
+      },
+      "line": {
+        "x1": 31,
+        "y1": 37,
+        "x2": 43,
+        "y2": 52
+      }
+    }
   },
   "approach": {
     "brief": "L’observation d’un geste précis, avec l’outil et la matière visibles.",
@@ -56,14 +115,26 @@
     "permission": "Licence Pexels",
     "credit": "Photographie d’illustration : Ketan Shanker",
     "caption": "Sculpture d’un motif dans le bois",
-    "annotation": { "label": { "x": 7, "y": 41, "align": "left" }, "line": { "x1": 23, "y1": 47, "x2": 35, "y2": 56 } },
     "alt": "Une main guide un outil de sculpture sur un motif tracé au crayon dans le bois.",
     "width": 2400,
     "height": 4240,
     "focalPoint": "50% 56%",
     "focalPointMobile": "50% 56%",
     "ratio": "5 / 4",
-    "ratioMobile": "4 / 3"
+    "ratioMobile": "4 / 3",
+    "annotation": {
+      "label": {
+        "x": 7,
+        "y": 41,
+        "align": "left"
+      },
+      "line": {
+        "x1": 23,
+        "y1": 47,
+        "x2": 35,
+        "y2": 56
+      }
+    }
   },
   "approachInterview": {
     "brief": "L’observation d’un geste précis, avec l’outil et la matière visibles.",
@@ -72,15 +143,37 @@
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Mick Henson",
     "caption": "Usinage d’une pièce au tour",
-    "annotation": { "label": { "x": 92, "y": 40 }, "line": { "x1": 78, "y1": 45, "x2": 49, "y2": 55 } },
-    "annotationMobile": { "label": { "x": 94, "y": 30 }, "line": { "x1": 77, "y1": 41, "x2": 64, "y2": 56 } },
     "alt": "Un artisan travaille sur un tour dans son atelier.",
     "width": 2400,
     "height": 1600,
     "focalPoint": "58% 50%",
     "focalPointMobile": "58% 50%",
     "ratio": "5 / 4",
-    "ratioMobile": "4 / 3"
+    "ratioMobile": "4 / 3",
+    "annotation": {
+      "label": {
+        "x": 92,
+        "y": 40
+      },
+      "line": {
+        "x1": 78,
+        "y1": 45,
+        "x2": 49,
+        "y2": 55
+      }
+    },
+    "annotationMobile": {
+      "label": {
+        "x": 94,
+        "y": 30
+      },
+      "line": {
+        "x1": 77,
+        "y1": 41,
+        "x2": 64,
+        "y2": 56
+      }
+    }
   },
   "homeEncounter": {
     "brief": "Un artisan au travail dans son atelier.",
@@ -89,14 +182,25 @@
     "permission": "Licence Unsplash",
     "credit": "Photographie d’illustration : Rawan Yasser",
     "caption": "Réglage d’une pièce sur le tour",
-    "annotation": { "label": { "x": 88, "y": 61 }, "line": { "x1": 71, "y1": 66, "x2": 59, "y2": 72 } },
     "alt": "Un artisan travaille sur une machine-outil dans son atelier.",
     "width": 2400,
     "height": 1600,
     "focalPoint": "54% 50%",
     "focalPointMobile": "58% 50%",
     "ratio": "4 / 3",
-    "ratioMobile": "4 / 3"
+    "ratioMobile": "4 / 3",
+    "annotation": {
+      "label": {
+        "x": 88,
+        "y": 61
+      },
+      "line": {
+        "x1": 71,
+        "y1": 66,
+        "x2": 59,
+        "y2": 72
+      }
+    }
   },
   "approachDetail": {
     "brief": "Un dessin annoté qui garde la trace des éléments d’une pièce.",
