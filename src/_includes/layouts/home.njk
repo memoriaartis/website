@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<section class='hero {% if not (heroImage | hasPhoto) %}without-image{% endif %}'>
+<section class='hero {% if heroImage | hasPhoto %}hero-cover{% else %}without-image{% endif %}'>
   <div class='hero-copy'>
     <p class='eyebrow'>{{ eyebrow }}</p>
     <h1>{{ heading }}</h1>
